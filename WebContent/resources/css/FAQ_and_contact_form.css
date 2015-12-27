@@ -1,0 +1,66 @@
+.contact_faq_info_fieldset{
+float: left;
+width:350px;
+margin-left: 10px;
+}
+
+.contact_faq_info_internal{
+padding:5px 5px;
+line-height:20px;
+}
+
+#contact_column1{
+width:340px;
+height:435px;
+float:left;
+display:inline;
+margin-left:30px;
+}
+
+#contact_pic{
+width:340px;
+height:240px;
+}
+
+#contact_info_block{
+width:350px;
+background-image: url('images/contact_bg.jpg');
+background-repeat: no-repeat;
+width:340px;
+height:195px;
+}
+
+#contact_info_text{
+width:280px;
+padding:27px 35px;
+line-height:17px;
+}
+
+#contact_form{
+float:left;
+width:450px;
+margin-left: 40px;
+}
+
+#contact_form  #edit-submit{
+margin-top: 20px;
+margin-bottom:50px;
+margin-left:100px;
+width:115px;
+height:30px;
+background:transparent url(images/btn_email.jpg) no-repeat center;
+border:none;
+cursor:pointer;
+font-size:0pt;
+}
+
+.faq{
+float:left;
+display:inline;
+width:500px;
+margin-left: 20px;
+}
+
+.faq_answer{
+line-height:20px;
+}

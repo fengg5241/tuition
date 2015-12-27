@@ -1,0 +1,590 @@
+/* This is the CSS file to theme the user edit form */
+/*one time login page*/
+#user-pass-reset{
+height:350px;
+width:600px;
+margin:20px auto;
+}
+
+#user-edit .description{
+text-align: center;
+line-height:20px;
+font-size:12px;
+background-color: #EFEFEF;
+}
+
+#user-edit .form-item .description{
+text-align: left;
+background-color: #FFF;
+font-size:0.85em;
+}
+
+
+#first_time_intro_fieldset{
+width:300px;
+float:left;
+margin-top:0px;
+margin-left:20px;
+margin-right:auto;
+}
+/*
+#first_time_intro_fieldset fieldset{
+border-style:none;
+border-width:0px;
+}
+*/
+#first_time_internal{
+padding:10px 10px;
+line-height:25px;
+font-size:13px;
+text-align: left;
+/*background-color:#C9F8BF;*/
+background-color: #EFEFEF;
+}
+
+#user-edit #first a{
+margin-right:85px;
+margin-top:20px;
+width:111px;
+height:30px;
+float:right;
+background:transparent url(images/1st_time_edit_proc.jpg) no-repeat center;
+border:none;
+cursor:pointer;
+font-size:0pt;
+}
+
+/*
+#user-edit #first{
+width:100px;
+float:right;
+font-size:18px;
+background-color: #EFEFEF;
+padding:10px 10px;
+text-align:center;
+font-weight:bold;
+margin-right:85px;
+margin-top:20px;
+border-style:solid;
+border-width:1px;
+border-color: #D2D1D1;
+}
+*/
+#edit_form_container{
+width: 820px;
+margin: 0px auto;
+position: center;
+}
+
+#edit_form_dynamic_row{
+width: 820px;
+height: auto;
+}
+
+/* hiding away the fieldsets of items inside the dynamic box */
+#edit_form_dynamic_row fieldset fieldset{
+border-style:none;
+}
+
+#edit_form_dynamic_row_spacer{
+clear:both;
+width: 820px;
+}
+
+
+#edit_form_dynamic_row #edit_column1{
+width:320px;
+height:420px;
+float:left;
+display:inline;
+}
+
+#edit_column1 #edit-submit-btn{
+margin-top:30px;
+margin-left:40px;
+}
+
+#edit_selection_box{
+}
+
+#edit_selection_box_internal_data{
+font-size:110%;
+font-weight: bold;
+margin:30px 0px 0px 40px;
+}
+
+#edit_selection_box_internal_data h3{
+color: #D63A23;
+}
+
+#particulars_fieldset, #account_fieldset, #qualifications_fieldset, #writeup_fieldset, #area_fieldset, #subject_fieldset, #rate_fieldset {
+width: 500px;
+height: auto;
+float: left;
+display: inline;
+}
+
+#edit_form_dynamic_row legend{
+font-size: 16px;
+font-weight: bold;
+color: #0046d5;
+}
+/*
+#edit_form_dynamic_row label{
+color: #D63A23;
+}
+*/
+#particulars-internal-data, #account-internal-data{ /* all particulars data within fieldset */
+margin-left: 70px;
+width:350px;
+}
+
+/* This small snippet is for the user registration form*/
+#user-register-internal-data, #user-login-internal-data, #user-pass-request-internal-data{
+width: 400px;
+margin-left:60px;
+margin-top:20px;
+margin-bottom: 20px;
+text-align: justify;
+}
+
+#user-register-internal-data{
+float:left;
+width:350px;
+}
+
+#reg_info_box{
+width:350px;
+float:left;
+margin-left:80px;
+margin-top:30px;
+line-height:20px;
+}
+
+#reg_captcha{
+margin-top:50px;
+margin-bottom:50px;
+}
+
+#reg_info_box_internal_data{
+padding:10px 10px;
+font-size:14px;
+}
+
+#reg_info_box_internal_data li{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+#reg_legal{
+font-weight: bold;
+margin:10px auto;
+margin-top:20px;
+}
+
+/* center_pg_header, center_pg_fieldset_internal, center_pg_internal styles are applied to the following pages so far */
+/* register redirect thank you page, 404 error and 403 error page */
+#center_pg_header{
+	color: #555555;
+	text-align: center;
+	font-weight:bold;
+	font-size:18px;
+	margin-top:10px;
+	margin-bottom: 0px;
+	margin-right:20px;
+}
+
+#center_pg_fieldset_internal{
+width:500px;
+margin:20px auto;
+}
+
+#center_pg_internal{
+line-height:20px;
+padding:15px 15px;
+}
+
+#user-login-internal-data, #user-pass-request-internal-data{
+height:280px;
+}
+/********************************************/
+
+/*********** Qualifications Section ***************/
+/*********** University Section ***************/
+/*********** Polytechnic Section ***************/
+#Polytechnic table, #University table, #school-internal-data, #ao-internal-data{
+width: 450px;
+margin: 0px auto;
+}
+
+/*********** A Level and O Level Section ***************/
+
+#ao-subject-option{
+width: auto;
+margin-left:10px;
+} 
+
+#ao-subject-option .form-item{
+float:left;   /* this causes all the form items to lie towards to left */
+display: inline;
+width: 100px;
+height:50px;
+margin-left:10px;
+margin-top: 5px;
+margin-bottom:5px;
+font-size: 80%;
+}
+
+#ao-school, #aolevel-others{
+clear: both;
+}
+/********* other qualifications *********/
+#others_internal_data{
+width:350px;
+margin:0px auto;
+}
+
+/******** writeup fieldset ********/
+#Experience .form-item, #Commitments .form-item{
+width:425px;
+margin:0px auto;
+}
+
+/********* Area and Subject  Preference *******/
+#area_fieldset fieldset fieldset .form-checkboxes, #subject_fieldset fieldset fieldset .form-checkboxes{
+
+}
+
+#area_fieldset fieldset fieldset .form-item, #subject_fieldset fieldset fieldset .form-item{   
+float:left;
+display: inline;
+width: 100px;
+height: 35px;
+padding-left:10px;
+font-size:90%;
+}
+/******** Rate Fieldset ***********/
+#rate_fieldset .form-item{   
+float:left;
+display: inline;
+width: 140px;
+height:55px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+padding-left:10px;
+padding-right:0px;
+font-size:90%;
+}
+
+/******** Picture Fieldset *********/
+/*
+#picture_fieldset{
+font-size: 80%;
+float: left;
+width: 820px; 
+}
+
+#picture_fieldset fieldset{
+width:auto;
+margin:0px 0px;
+padding:0px 0px;
+}
+
+#picture_fieldset fieldset legend{
+font-size: 16px;
+}
+
+#edit_picture_column1{
+float:left;
+margin-left:30px;
+margin-top:10px;
+width:250px;
+}
+
+#picture_upload{
+width:300px;
+float:left;
+margin-top:50px;
+}
+
+#picture_fieldset_spacer{
+clear:both;
+width:780px;
+}
+*/
+/******** edit submit ********/
+#user-edit .form-submit{
+margin-top: 15px;
+width:185px;
+height:30px;
+background:transparent url(images/btn_prosubmit.jpg) no-repeat center;
+border:none;
+cursor:pointer;
+font-size:0pt;
+}
+
+/********** a new section is created here to theme the certificate upload page **********/
+#cert-upload-form  .description{
+width: 90%;
+font-size: 12px;
+margin:10px auto;
+margin-bottom:5px;
+line-height:20px;
+}
+
+#upload_row{
+width:880px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#upload_new_uploads_fieldset{
+width:350px;
+float:left;
+display:inline;
+}
+
+#upload_column2{
+float:left;
+margin-left:10px;
+}
+
+#upload_share_file_fieldset, #upload_uploaded_files_fieldset{
+width:520px;
+}
+
+#upload_share_file_fieldset .form-item{
+margin-left:10px;
+}
+
+
+#upload_new_uploads_fieldset fieldset, #upload_column2{
+min-height:350px;
+}
+
+#upload_new_uploads_fieldset .form-item{
+margin-left:20px;
+}
+
+#upload_uploaded_files_fieldset table{
+table-layout: fixed;
+border-collapse: separate;
+font-size:90%;
+margin-top:10px;
+margin-bottom:10px;
+background-color: #f3f3f3;
+}
+
+#upload_uploaded_files_fieldset table th{
+text-align:center;
+color: #d63a23;
+}
+
+/* only applied to the file name, because firefox does not support table-layout:fixed */
+#upload_table_no_FF_overflow{
+width:110px;
+overflow:hidden;
+}
+
+.upload_verified{
+font-weight:bold;
+color: #209731;
+}
+
+.upload_unverified{
+font-weight:bold;
+color: #F72709;
+}
+
+#upload_row_spacer{
+clear:both;
+height:1px;
+width:900px;
+}
+
+#cert-upload-form .form-submit{
+margin-left:100px;
+margin-top:30px;
+width:129px;
+height:30px;
+background:transparent url(images/cert_upload_delete_btn.jpg) no-repeat center;
+border:none;
+cursor:pointer;
+font-size:0pt;
+}
+
+
+/********** a new section is created here to theme the photo upload and cropping page **********/
+#profile-photo-form .description{
+width:90%;
+font-size: 12px;
+margin:10px auto;
+margin-bottom:5px;
+line-height:20px;
+}
+
+#photo_row1{
+width:860px;
+margin: 0 auto;
+}
+
+#photo_current_pic_fieldset{
+width:420px;
+float:left;
+}
+
+#photo_upload_fieldset{
+width:420px;
+float:left;
+margin-left:20px;
+}
+
+#photo_current_pic_fieldset fieldset, #photo_upload_fieldset fieldset{
+height:320px;
+}
+
+#photo_current_pic_fieldset .picture{
+float:left;
+display:inline;
+margin:20px 20px;
+}
+
+#photo_current_pic_fieldset #edit-submit-delete{
+float:left;
+margin:90px 30px;
+}
+
+#photo_upload_fieldset .form-item{
+width:350px;
+margin:0px auto;
+margin-top:50px;
+}
+
+#photo_upload_fieldset #edit-submit-upload{
+margin:20px 100px;
+}
+
+#photo_crop_fieldset{
+width: 860px;
+margin: 0px auto;
+}
+
+#preview_block{
+width:150px;
+margin-left:80px;
+margin-top: 12px;
+float: left;
+}
+
+#preview_box{
+margin-top:10px;
+margin-bottom:20px;
+}
+
+#crop_area{
+margin-top:35px;
+margin-left:30px;
+float:left;
+}
+
+#edit-submit-crop{
+width:100px;
+}
+
+.crop_error_text{
+padding:30px 30px;
+font-size:120%;
+font-weight: bold;
+}
+
+.photo_spacer{
+width:860px;
+height:1px;
+margin:0px 0px;
+clear:both;
+}
+
+/*janus_new */
+/********** a new section is created here to theme the tutor schedule page **********/
+
+#schedule_table_fieldset .schedule{
+height:200px;
+line-height:100px;
+text-align:center;
+}
+
+
+#schedule_table_fieldset{
+width: 860px;
+margin: 0px auto;
+}
+
+#schedule_table_info{
+font-size: 12px;
+width:90%;
+margin:10px auto;
+margin-bottom:20px;
+line-height:20px;
+}
+
+/*
+.schedule_bold{
+color:#F69600;
+}
+*/
+#schedule_table_fieldset .account_process{
+height: 30px;
+float:left;
+display:inline;
+margin-left:20px;
+margin-right:20px;
+}
+
+#schedule_table_fieldset .account_status{
+width:300px;
+height: 30px;
+line-height: 30px;
+font-size:14px;
+margin-left:70px;
+padding-left:10px;
+background-color: #EFEFEF;
+}
+
+#schedule_table_fieldset .account_status #account{
+font-size:18px;
+font-weight: bold;
+margin: 10px 10px;
+}
+
+#schedule_table_fieldset .schedule_table{
+width: 600px;
+float: left;
+display:inline;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.submit_note{
+float: left;
+margin-left:20px;
+margin-top:200px;
+font-size:14px;
+font-weight: bold;
+background-color: #EFEFEF;
+padding:10px 10px;
+}
+
+#schedule_table_fieldset .schedule_submit a{
+margin-left:20px;
+margin-top:200px;
+width:178px;
+height:30px;
+float: left;
+background:transparent url(images/schedule_sbmt.jpg) no-repeat center;
+border:none;
+cursor:pointer;
+font-size:0pt;
+}
+
+/* Theming for Assignments Central is bundled together in admin_interface.css for convenience */

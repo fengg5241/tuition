@@ -1,0 +1,32 @@
+
+.nav a, .nav a:active, .nav a:visited {
+	display:block;
+	float:left;
+	padding:5px 8px;
+	background:#DAF1C9;
+	color:green;
+	margin-right:10px;
+	text-decoration:none;
+	outline:none;
+	}
+.nav a.selected, .nav a.selected:active, .nav a.selected:visited {
+	background:#C51D1D;
+	color:#fff;
+	text-decoration:none;
+	outline:none;
+	}
+
+	.req_student_hiddencontent,.preferences{ 
+	padding:12px;
+	background:#eee;
+	display:none;
+	clear:both;  /* CLEAR BOTH ADDED BY JANUS */
+
+	} 
+.clear {
+	clear:both;
+	}
+	
+
+
+

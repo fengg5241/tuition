@@ -1,0 +1,30 @@
+
+ 
+div .pics{  
+	float: left;
+	padding: 0;  
+    margin:  0; 
+    height:  250px;  
+    width:   445px;  
+ }  
+ 
+div .pics img {  
+
+    width:  445px; 
+    height: 250px; 
+	top:  0; 
+    left: 0; 
+} 
+
+div .text {  
+
+    width:  205px; 
+    height: 250px; 
+	float: left;
+} 
+
+div #holder{
+
+    width:  650px; 
+
+}

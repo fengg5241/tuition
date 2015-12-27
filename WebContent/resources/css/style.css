@@ -1,0 +1,803 @@
+/* Main CSS for Singapore Tutors */
+
+
+/* importing style for user profiles */
+@import "profile.css";
+/* importing style for user edit form */
+@import "user_edit_form.css";
+/* importing style for user edit form */
+@import "tutor_request_form.css";
+/* importing style for user search form */
+@import "tutor_search_form.css";
+/* importing style for contact form and FAQ page*/
+@import "FAQ_and_contact_form.css";
+/* importing style for administration interface*/
+@import "admin_interface.css";
+/* importing style for administration interface*/
+@import "admin_interface2.css";
+
+
+body {
+	background-color: #DF4002;/*#DF4002*/
+	margin: 0px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	background-image: url('images/bg4.gif');
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#page-wrapper {
+	width: 900px;
+	background-color: #FFFFFF;
+	position: center;
+	margin: auto auto;
+}
+
+/* General Link Layout */
+a:link, a:visited, a:active {
+	color: #CC3300;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #FF9900;
+}
+
+/* the primary links menu items are of class menu */
+.menu_bar{
+	width: 180px;
+	height: 30px;
+}
+
+.menu_bar a{ 
+	letter-spacing:1px; 
+	font-weight:bold;
+	line-height: 28px;
+}
+
+.menu_bar a:link, .menu_bar a:visited, .menu_bar a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu_bar a:hover {
+	text-decoration: none;
+	color:#FF9900;
+}
+
+/*purpose is to force images to be small to the width of 140px, and height of 180px */
+/* using css, without resaving the original image to be that big */
+.picture img{
+	width: 140px;
+	height: 180px;
+}
+
+
+/* ******************** /
+
+/* General Header Layout */
+/*
+h1, h2, h3, h4{
+	font-family: Helvetica, Arial, "Lucida Grande", Verdana, sans-serif; 
+	margin: 10px 0 15px 0;
+}
+*/
+/* ******************* */
+/** header styles **/
+#header-wrapper {
+	margin:0px 0px;
+	height:90px;
+	width:900px;
+}
+
+.yellow_header {
+	clear:both;
+	color: #FFAB01;
+	font-weight:bold;
+	font-size:18px;
+	border-bottom: thin dotted #ABABAB;
+	padding:5px 0px;
+	margin-top:25px;
+	margin-bottom: 20px;
+	margin-right:10px;
+	margin-left:20px;
+	text-align:left;
+}
+
+#logo {
+	height:71px;
+	width:413px;
+	padding-top:18px;
+	margin: 0px 0px 0px 32px;
+	float: left;
+	display: inline;
+}
+
+/*tutor_name_search*/
+#header_search{ 
+	float:right;
+	width:350px;
+	height:50px;
+	margin-top: 40px;
+}
+
+#tutor-name-search{
+	height:32px;
+	width: 160px;
+	float: left;
+	margin-bottom: 2px;
+	margin-left: 10px;
+}
+
+#client-field-search{
+	height:50px;
+	width: 160px;
+	float: left;
+	margin-bottom: 2px;
+	margin-left: 20px;
+}
+
+
+#tutor-name-search .form-item, #client-field-search .form-item{
+	margin:0px 0px;
+	padding:0px 0px;
+	float:left;
+	display:inline;
+}
+
+#tutor-name-search input, #client-field-search input{
+	font-size:10px;
+}
+
+#tutor-name-search .form-item label, #client-field-search .form-item label{
+	font-size:11px;
+	font-weight:normal;
+}
+
+#tutor-name-search #edit-submit, #client-field-search #edit-submit{
+	float:left;
+	width: 18px;
+	height: 19px;
+	margin-top:14px;
+	background:transparent url(images/header_search_but1.jpg) no-repeat center;
+	border:none;
+	cursor:pointer;
+	font-size:0pt;
+}
+
+#Login_Logout_Linker{
+	text-align: right;
+	margin-right:10px;
+	margin-bottom:5px;
+}
+
+/* Main DIV holder for entire primary-links */
+#primary-links {  
+	/*background-image: url('images/menu_bg.jpg');*/
+	/*background-image: url('images/menu_bg_long.jpg');*/
+	width: 900px;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+/*
+#primary-links ul {
+	width:auto;
+	letter-spacing: 1px;
+	font-size: 80%;
+
+}
+
+.links-menu {
+	width: 900px;
+	height: 30px;
+}
+*/
+/* each individual button on #primary-links, to be floated left */
+#pri_buttons{ 
+	height: 30px;
+	width:180px;  /*225*/
+	background-image: url('images/menu_bg_5.jpg');
+	display:block;
+	float:left;
+	text-align: center;
+}
+
+/*comment out when launch phase 2*/
+
+.menu_bar{
+width:180px;  /*225*/
+}
+
+/*
+.button_spacer{
+display: block;
+float:left;
+width: 0px;
+height: 30px;
+background-color: #F7F7F7;
+}
+
+
+.center_but a, .center_but a:visited{
+display:block;
+line-height: 30px;
+text-decoration:none;
+color: #000000;
+}
+
+.center_but a:hover {
+	color: #002ED8;
+}
+
+.center_but  a.active{
+	color: #E42125;
+}
+*/
+/** content area styles **/
+#main-wrapper{
+width:900px;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+
+}
+/*
+.width-clearer{
+width:900px;
+height:1px;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+clear:both;
+}
+*/
+#content-region-none {
+width:900px;
+min-height:400px;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+
+}
+/*
+#content-region-left {
+width: 600px;
+padding:0px 0px 10px 10px;
+position: relative;
+float:right;
+border: thin solid #A8A8A8;
+background: #80A3CF;
+}
+#content-region-right {
+
+}
+#content-region-both {
+
+}
+
+#tabs {
+
+}
+
+
+.content-title {
+}
+*/
+/** sidebar styles **/
+/*
+#sidebar-left-region{
+position:relative;
+float:left;
+width:200px;
+padding: 0px 0 0 10px;
+}
+#sidebar-right-region{
+position:relative;
+float:right;
+width:200px;
+padding: 0px 10px 0 0;
+}
+*/
+
+.front_horizontal{
+width:900px;
+margin:0px 0px;
+
+}
+
+
+/* Front Page Styling */
+#front_row1_content{
+	width:  900px;
+	height: 250px;
+	margin: 16px 0px 0px 0px;
+}
+
+#front_row1_spacer ,#front_row2_spacer{
+clear:both;
+display:block;
+
+}
+
+#front_picture{
+	width: 650px;
+	height: 250px;
+	float: left;
+	margin-top:0px;
+	margin-left: 16px;
+	display: inline;
+}
+
+#front_picture .text{
+background-image: url('images/front_banner_text_empty.jpg');
+background-repeat: no-repeat;
+}
+
+#front_picture #front_picture_blue_text{
+width:175px;
+font-size:13px;
+font-weight:bold;
+line-height:16px;
+color:#FFF;
+margin:0px auto;
+margin-top:20px;
+}
+
+#front_picture h3{
+line-height:20px;
+}
+
+#front_picture #front_picture_blue_text #front_contact_no{
+color:#FAE21B;
+font-size:16px;
+}
+
+/*
+#front_picture img{
+	margin-top:0px;
+	padding-top:0px;
+	float:left;
+}
+*/
+#rate_box_front{
+	background-image: url('images/rates_long.jpg');
+	background-repeat: no-repeat;
+	float: left;
+	display:inline;
+	width: 200px;
+	height: 250px;
+	margin-left: 15px;
+	margin-top:0px;
+	padding-top:0px;
+}
+
+#rate_box_front #rate_menu_wrapper{
+	margin-top:35px;
+	height:60px;
+}
+
+#rate_box_front a:link, #rate_box_front a:visited{
+	line-height:20px;
+	background-image: url('images/ratetab_yellow.jpg');	
+	background-repeat: no-repeat;
+	width:90px;
+	height:20px;
+	text-align:center;
+	color:#383838;
+	float:left;
+	margin-left:6px;
+	margin-top:5px;
+}
+
+ #rate_box_front a:hover, #rate_box_front a:active, #rate_box_front a:focus{
+	color:#FFF;
+	background-image: url('images/ratetab_grey.jpg');	
+	background-repeat: no-repeat;
+	text-decoration:none;
+}
+
+#rate_box_front table{
+	clear:both;
+	font-weight: bold;
+	color: #FFFFFF;
+	
+	table-layout: auto;
+	border-collapse: separate;
+}
+
+
+#rate_box_front #rate_box_front_est{
+	width: 190px;
+	line-height:10px;
+	font-size:10px;
+	margin:0px auto;
+	color: #FFFFFF;
+}
+
+/* row containing search box and login box */
+#front_row2_content{
+	margin-top:17px;
+	width:900px;
+}
+
+/* so far this only applies to the "Search Tutors" text in above the search block */
+.txt_grey_12px {
+	color: #555555;
+	font-weight: bold;
+}
+
+#search_box_front{
+	width:555px;
+	float:left;
+	margin-left: 16px;
+	display: inline;
+}
+
+#search_box_front_content{
+	display:block;
+}
+
+#box_contact_no{
+	color:#FF7E00;
+	font-size:16px;
+}
+/************************/
+
+
+
+
+#login_hat_column{
+	float:left;
+	width:300px;
+	margin-left:0px;
+}
+
+/* the whole login box */
+#login_box_front{
+	margin-top:7px;
+	margin-left:20px;
+	width:300px;
+	height:230px;
+}
+
+#front_bottom_pic{
+	width:296px;
+	height:165px;
+}
+
+/* Login Box Body Components */
+#login_box_content{
+	display:block;
+	margin:0px 0px;
+}
+
+#login_box_front_header{
+	height:30px;
+	width:280px;
+	border-bottom-width:1px;
+	border-bottom-color:#A5A5A5;
+	border-bottom-style:solid;
+
+}
+
+/* the dot image */
+#login_box_front_header img{
+	width: 10px;
+	height: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#login_box_front_header h2{
+	float: left;
+	margin-left: 7px;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #e22600;
+	height:30px;
+	line-height:30px;
+}
+
+#login_box_front_body{
+	height:200px;
+}
+
+#login_row1{
+	margin-top:10px;
+}
+
+#login_row1 .login_block_item{
+	text-align: left;
+	padding-top:20px;
+	padding-bottom: 0px;
+}
+
+.login_block_item .form-item{
+margin:0px 0px;
+}
+
+
+#login_row1 label{
+	float:left;
+	width: 110px;
+	font-weight:normal;
+}
+
+#login_row1 .login_block_passrequest{
+margin-left:110px;
+text-align:left;
+}
+
+#login_box_clearer{
+width: 300px;
+clear:both;
+height:1px;
+}
+
+#login_row2 {
+margin-top:30px;
+}
+
+#login_block_submit{
+float: left;
+margin-left:5px;
+}
+
+#login_row2 .form-submit {
+width: 76px;
+height: 30px;
+background:transparent url(images/btn_login_red.jpg) no-repeat center;
+border:none;
+cursor:pointer;
+font-size:0pt;
+}
+
+
+#login_block_register_link{
+float: left;
+margin-left:15px;
+}
+
+#login_successful_msg{
+font-weight:bold;
+margin-top:45px;
+margin-left:20px;
+}
+
+
+
+/*********************************/
+/* Start of Footer region which contains only a footer message defined in Drupal */
+/** footer styles **/
+#footer-region {
+	position: relative;
+	width: 900px;
+	height: 75px;
+	background-image: url('images/footer_bg1.gif');
+	background-repeat: repeat-x;
+	margin-top: 20px;
+	font-size: 10px;
+	text-align: center;
+	clear:both;
+}
+
+/* Secondary Links on Footer Region */
+#page_bottom_searchbar ul{
+	text-align: center;
+	font-size: 12px;
+}
+
+#page_bottom_searchbar ul li {
+	display: inline;
+	padding: 0px 0px 0px 0px;
+	margin:0px 5px 0px 5px;
+}
+
+#footer-text{
+	margin-top:20px;
+}
+
+/* the general drupal container of the content titles of every page above the tabs */
+.content-title{
+clear:both;
+width:900px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+
+
+/** Admin Style **/
+/* Tabs */
+ul.primary {
+	padding: 0px 20px 0px 20px;
+	margin-top: 0px;
+	border-bottom: 1px solid #BDBDBD;
+}
+/*
+ul.secondary {
+	border-bottom: solid 1px #18324B;
+}
+
+
+ul.primary li {
+
+}
+*/
+ul.primary li a {
+	padding-top:7px;
+	padding-bottom:7px;
+	line-height:30px;
+	border-width:1px;
+	border-color:#BDBDBD;
+	background-image: url('images/tab_bg.jpg');
+	background-repeat: repeat-x;
+	background-position: 50% 50%;
+	font-size:13px;
+	font-weight: bolder;
+	color: #8F090B;
+}
+
+ul.primary li.active a.active {
+	color:#FF4800;
+/*	font-size:14px;		*/
+/*	text-decoration:underline;*/
+	border-bottom-width: 1px;
+	border-bottom-color: #FFF;
+}
+
+ul.primary li a:hover {
+	color: #CC3300;
+}
+/*
+ul.secondary li {
+margin-bottom: 5px;
+}
+*/
+/* Region: content */
+/*
+#content-region-both table {
+width: 530px;
+}
+table thead {
+color: #FFFFFF;
+}
+table tbody tr.odd,
+table tbody tr.odd td.menu-disabled{
+background: #2B5986;
+border-bottom: solid 1px #336699;
+}
+table tbody tr.even,
+table tbody tr.even td.menu-disabled{
+background: #2D5E8D;
+border-bottom: solid 1px #336699;
+}
+
+table tr td.region{
+font-weight: normal;
+color:#FFFFFF;
+background: #6699CC;
+}
+ul.secondary li.active a.active {
+border-bottom: solid 1px #18324B;
+}
+*/
+
+#content-region-none table{
+border-collapse: separate;
+}
+
+
+
+/* ESSENTIAL OVERWRITES START HERE */
+
+/* to display the search results page UID and Name in a nicer color */
+/* special link color, from search page */ 
+.search_object_uid a{
+	color: #3A0FFA;
+}
+
+.search_object_name a{
+	color: #9C0101;
+}
+
+/*terms and condition and privacy statement*/
+/*node 1 and 2 */
+#node-1, #node-2, #node-56{
+/*line-height:20px;*/
+font-size:12px;
+width:660px;
+margin:20px auto;
+text-align:justify;
+}
+
+#node-56{
+font-size:14px;
+line-height:20px;
+}
+
+/* error messages default */
+
+.messages{
+min-height:30px;
+line-height:30px;
+font-weight:bold;
+text-align: center;
+border-style:none;
+border-width:0px;
+}
+
+.messages ul li{
+min-height:30px;
+line-height:30px;
+font-weight:bold;
+margin-left:210px;
+width:520px;
+text-align: left;
+border-style:none;
+border-width:0px;
+}
+
+/* drupal_set_messages */
+.status, .status ul{
+margin-top:0px;
+margin-bottom:0px;
+background-color:#B2F0A6;
+}
+
+/*faq correction overwrite */
+.faq_qa_header h5{
+font-size:13px;
+font-weight:bold;
+}
+
+.faq a:link, .faq a:visited, .faq a:active, .faq a:focus {
+	color: #A82222;
+	text-decoration: none;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.faq a:hover {
+	text-decoration: underline;
+	color: #EA3232;
+}
+
+/* to theme the links in tutor_list or tutor shortlist page */
+a:link.tutorlst_tab, a:visited.tutorlst_tab{
+background-color:#428AD2;
+margin-right:5px;
+height:30px;
+padding:7px 10px;
+line-height:30px;
+font-size:13px;
+font-weight:bold;
+color:#FFF;
+border-style:none;
+border-color:#428AD2;
+border-width:2px;
+z-index:-1;
+}
+
+a:active.tutorlst_tab, a:focus.tutorlst_tab{
+background-color:#FFF;
+line-height:30px;
+height:30px;
+font-size:13px;
+font-weight:bold;
+color:#454545;
+border-bottom-color:#FFF;
+z-index:1;
+}
+
+a:hover.tutorlst_tab{
+background-color:#B9CDE2;
+border-color:#B9CDE2;
+text-decoration:none;
+}

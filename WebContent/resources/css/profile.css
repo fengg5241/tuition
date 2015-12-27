@@ -1,0 +1,287 @@
+/********************/
+/*    profile theming      */
+/********************/
+/* this is for the h2 text which appears over every user pages above the tabs */
+/*consider moving this to styles .content-title */
+#page_profile_header{
+	color: #555555;
+	text-align: right;
+	font-weight:bold;
+	font-size:18px;
+	margin-top:10px;
+	margin-bottom: 0px;
+	margin-right:20px;
+}
+
+.profile {
+	width: 900px;
+}
+
+#profile_headers{
+	height: 60px;
+	background-image: url('images/profile_title_bg.jpg');
+}
+
+#profile_icons{
+	float:left;
+	display:inline;
+	height:60px;
+	margin-left:15px;
+}
+/* commented out because now most profile headers are jpgs */
+/*
+#profile_headers h2{  
+	float:left;
+	height:60px;
+	line-height:60px;
+	font-size: 15px;
+	font-weight:bolder;
+	color: #484747;
+	margin-left:15px;
+}
+*/
+#profile_1{ /* first horizontal block row */
+	position:center;
+	margin:0 auto;
+	margin-top:10px;
+	width: 820px;
+	float:none;
+}
+
+#particulars_view{ /*first vertical column with picture and name details */
+	width:170px;
+	min-height: 400px;
+	float:left;
+	display:inline;
+}
+
+#profile_name{
+	font-size: 18px;
+	font-weight: bold;
+	width:170px;
+	color: #EA0000;
+	text-align: center;
+}
+
+.profile .picture {	
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+#particulars_tutor_verified{
+	text-align: center;
+}
+
+#category_0_box{  /* Personal Particulars */
+	width:170px;
+	background-color: #F5F5F5;
+	padding-top:5px;
+	margin-top: 5px;
+}
+
+#category_0_box h2{ /* special h2 for personal particulars box only */
+	margin: 0px;
+	text-align: center;
+	font-size: 15px;
+	font-weight:bolder;
+	color: #484747;
+}
+
+#category_0_box table{
+	margin:5px 5px;
+	border-collapse: separate;
+}
+
+#category_0_box  table td{
+	text-align: left;
+	padding:5px 5px 5px 5px;
+	color: #333333;
+}
+
+#category_1_box{ /* Tutor Subject and Level Preference */
+float:left;
+width: 370px;
+/*min-height: 410px;*/
+margin-left:10px;
+}
+
+#category_1_box #profile_data_block{
+width: 330px;
+position: center;
+margin: 0 auto;
+font-size:13px;
+margin-top:10px;
+}
+
+#profile_data_block .subject_header{
+margin-top: 10px;
+color: #006699;
+font-size:13px;
+}
+
+#profile_data_block .subject_content{
+width: 310px;
+text-align: left;
+line-height: 20px;
+margin-top: 3px;
+}
+
+#category_2_box{  /* Tutor's Area Preference */
+float:left;
+width: 260px;
+/*min-height: 410px;*/
+margin-left:10px;
+}
+
+#category_2_box #profile_data_block{
+width: 220px;
+position: center;
+margin: 0 auto;
+font-size:13px;
+margin-top:10px;
+}
+/* janus_new*/
+#category_2_box #profile_data_block{
+font-weight:bold;
+}
+
+#profile_data_block #district_drop{
+margin-left:10px;
+}
+
+#profile_data_block .preferences{
+margin-top:0px;
+padding-top:5px;
+background-color:#FFF;
+}
+
+#profile_data_block .area_header{
+color: #702588;
+font-size:15px;
+}
+
+#profile_data_block .area_content{
+width: 200px;
+text-align: left;
+line-height: 25px;
+margin: 0 auto;
+margin-top: 3px;
+font-weight:normal;
+}
+
+#profile_1_spacer{
+width:820px;
+height:1px;
+clear:both;
+}
+
+#category_3_box{  /* Qualifications and Experience */
+position:center;
+margin:0 auto;
+margin-top:15px;
+width:820px;
+clear:both;
+float:none;
+}
+
+#category_3_box #profile_data_block{
+width: 780px;
+position: center;
+margin: 0 auto;
+font-size:13px;
+margin-top:10px;
+line-height:20px;
+}
+
+#profile_data_block .qual_header{
+margin:8px 0px;
+padding:0px 0px;
+color: #619824;
+font-size:13px;
+font-weight:bold;
+margin-top:20px; /*fix for <br/> problem */
+}
+
+#profile_data_block .qual_content{
+line-height:20px;
+margin:0px 0px;
+padding:0px 0px;
+
+text-align: left;
+}
+/*
+#category_3_box dl{
+padding: 0em 2em 2em 2em;
+font-size: 90%;
+}
+
+#category_3_box dl dt{
+font-size: 110%;
+color: #F7280D;
+}
+*/
+#category_4_box{  
+width:820px;
+position:center;
+margin:0 auto;
+margin-top:15px;
+clear:both;
+float:none;
+
+}
+
+#category_4_box  #profile_data_block{
+width:800px;
+overflow:auto;
+margin-top:10px;
+}
+
+#category_4_box table{
+margin:0px auto;
+text-align: center;
+border-collapse: separate;
+border-width:2px;
+border-style:solid;
+border-color: #BFBFBF;
+}
+
+#category_4_box tr td.Description{
+background-color: #F3F3F3;
+color: #1F1F1F;
+font-weight: bold; 
+font-size:13px;
+}
+
+#category_4_box tr td.Content{
+background-color: #EDEDED;
+font-weight: bold; 
+font-size:12px;
+}
+
+#category_4_box td{
+margin:0px auto;
+padding: 5px 5px;
+text-align: center;
+}
+
+#category_5_box{  
+position:center;
+margin:0 auto;
+margin-top:15px;
+width:820px;
+clear:both;
+float:none;
+}
+
+#schedule_text{
+text-align:center;
+font-size:13px;
+font-weight:bold;
+margin-top:20px;
+margin-bottom:20px;
+}
+
+/**************************/
+/*    End of profile theming     */
+/**************************/

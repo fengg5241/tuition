@@ -1,0 +1,805 @@
+/* New Theming for TT 2.0 Upgraded Admin Interface */
+#co_central_page {
+
+}
+
+/* Headers */
+#co_central_page  .co_central_header{
+font-size:17px;
+font-weight:bold;
+color:#e12613;
+}
+
+
+/* page row 2 */
+#co_central_page #co_central_page_row2{
+margin:10px 20px;
+}
+
+/* because grand children are floating, we need to use this to to give the children a height, so that the parents will in turn have a height */
+#co_central_page #co_central_page_row2 .clear{
+clear:both;
+}
+
+#co_central_page .fieldset_content, #cli_req_page .fieldset_content{
+padding:10px 10px;
+}
+
+#co_central_page .fieldset_content a, #cli_req_page .fieldset_content a{
+font-size:13px;
+line-height:20px;
+}
+
+/* #co_central_page  .spacing{
+width:2%;
+float:left;
+height: 500px;
+} */
+
+
+
+/****** New Request Section ******/
+#co_central_new_req_summary{
+width:90%;
+margin:auto auto;
+}
+
+#co_central_new_req_summary table{
+margin:10px auto;
+}
+
+#co_central_new_req_summary table tr{
+height:30px;
+}
+
+#co_central_new_req_summary table tr.new_req_summ_row_odd{
+background-color:#d5e9ff;
+}
+
+#co_central_new_req_summary table tr.new_req_summ_row_even{
+background-color:#f7f7f7;
+}
+
+#co_central_new_req_summary table tr.new_req_summ_row_header{
+text-align:center;
+background-color:#b3b3b3;
+font-size:13px;
+font-weight:bold;
+}
+
+#co_central_new_req_summary table th, #co_central_new_req_summary table td{
+text-align:center;
+}
+
+#co_central_new_req_summary .display_center_message{
+text-align:center;
+font-weight: bold;
+font-size:14px;
+background-color:#f7f7f7;
+height: 60px;
+line-height: 60px;
+color:#434343;
+}
+/********************************************************/
+/****** Curent Job Section ******/
+#co_central_page legend, #cli_req_page legend, #payment_show_page legend,
+#client_search_results legend, #assignment-form legend,
+#client-payment-summary legend, #tutor-payment-summary legend, 
+#client-request-generate-payment-form legend, #client-request-update-payment-form legend,
+#payment-invoice-form  legend, #admin-attn-form legend, #admin-verify-tutors legend, #admin-approve-photo-form legend{
+font-size:15px;
+font-weight:bold;
+color:#3996ff;
+}
+
+/* Coordinator Current Job */
+#co_central_page  #co_central_job{
+width:60%;
+float:left;
+margin-right:10px;
+}
+
+/********** Co Central Page, Front End *********************/
+#co_frontend_page .co_central_header, #co_backend_page .co_central_header{
+font-size:20px;
+margin: 5px 0px 10px 0px;
+}
+
+#co_backend_page  #payment_jobs{
+padding-top: 20px;
+}
+
+#co_frontend_page #co_central_frontend_reqbox1, #co_frontend_page  #co_central_frontend_reqbox2, #co_backend_page  #assignment_jobs, #co_backend_page  #payment_jobs{
+width: 90%;
+margin: 10px auto;
+}
+
+#co_frontend_page #co_central_frontend_reqbox1 .fieldset_content, #co_frontend_page  #co_central_frontend_reqbox2 .fieldset_content #links_contents{
+margin-left: 25%;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+#co_frontend_page #co_central_frontend_reqbox1 .fieldset_content a, #co_frontend_page  #co_central_frontend_reqbox2 .fieldset_content a{
+font-size: 17px;
+line-height:30px;
+}
+
+/* this is the horizontal parent row containing the floated children */
+#co_frontend_page #internal_links_fieldset_render{
+width: 95%;
+margin: 0 auto;
+}
+
+#co_frontend_page #internal_links_fieldset_render legend{
+color: #E12613
+}
+
+#co_frontend_page #internal_links_fieldset_render .internal_fieldset{
+float: left;
+height: auto;
+width: 47%;
+margin: 10px 10px;
+}
+
+#co_frontend_page #internal_links_fieldset_render .internal_fieldset a{
+font-size:15px;
+line-height: 25px;
+}
+
+#co_frontend_page #internal_links_fieldset_render .fieldset_content {
+background-color:#F7F7F7;
+}
+
+/********** Co Central Page, Back End *********************/
+/* #co_backend_page  #assignment_jobs .fieldset_content, #co_backend_page  #payment_jobs .fieldset_content{
+margin-left: 18%;
+margin-top: 20px;
+margin-bottom: 20px;
+} */
+
+#co_backend_page .fieldset_content .left_block{
+float: left;
+width:67%;
+}
+
+#co_backend_page .fieldset_content .right_block{
+float: left;
+width: 33%;
+}
+
+#co_backend_page  #assignment_jobs .fieldset_content a, #co_backend_page  #payment_jobs .fieldset_content a{
+font-size: 14px;
+line-height:28px;
+}
+
+#co_backend_page #assignment_jobs .fieldset_content .sublinks ul{
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+#co_backend_page #assignment_jobs .fieldset_content .sublinks  a{
+font-size: 13px;
+line-height:22px;
+}
+
+#co_backend_page #assignment_jobs .right_block  a, #co_backend_page  #payment_jobs .right_block  a{
+font-size: 14px;
+line-height: 25px;
+}
+
+
+
+
+#co_backend_page .clear{
+clear: both;
+}
+
+/********** Client Current Request Parent Theming ***************/
+#co_central_page #co_central_global .fieldset_content{
+background-color: #e0f7ff;
+}
+
+#cli_req_page #info_row{
+margin: 10px auto;
+width: 90%;
+}
+
+#cli_req_page #cli_req_compile_category{
+padding: 5px 5px 10px 5px;
+width: auto;
+margin: 0 auto;
+background-color: #e0f4ff;
+}
+
+#cli_req_page  #backdate_form{
+width: 25%;
+margin-left:10px;
+display: inline;
+float: left;
+font-size:13px;
+}
+
+#cli_req_page #cli_req_compile_category #cli_req_compile_category_body{
+padding: 5px 5px;
+}
+
+#cli_req_page  .category_row{
+width: 90%;
+height: 20px;
+margin: 8px auto;
+}
+
+#cli_req_page  .cli_req_info_field{
+width:25%;
+float:left;
+display:inline;
+font-size:17px;
+font-weight:bold;
+color:#e12613;
+}
+
+#cli_req_page  .cli_req_info_content{
+width:75%;
+float:left;
+display: inline;
+font-size:13px;
+
+color:#000000;
+}
+
+#cli_req_page  #num_compile_results{
+margin: 20px auto;
+width: 40%;
+font-size: 15px;
+font-weight: bold;
+color:#e12613;
+}
+
+#cli_req_page  #client_request_compile{
+width:80%;
+margin:auto auto;
+}
+
+
+#cli_req_page  .day_count{
+margin:-15px 0px 0px 500px;
+}
+
+/***********************************************/
+/****** Global Assignment Section ******/
+
+#co_central_page #co_central_global{
+width:36%;
+float:left;
+padding-left:10px;
+border-left-width:2px;
+border-left-style:solid;
+border-color:#959595;
+}
+
+
+#co_central_page #co_central_global .fieldset_content{
+background-color: #e0f7ff;
+}
+
+/********** Client Request Central General Theming ***************/
+/*** Log Themeing ***/
+.single_log{
+width: 100%;
+margin-top:10px;
+}
+
+.single_log td{
+text-align:center;
+width:auto;
+}
+
+
+.single_log tr{
+height:20px;
+background-color:#e3edfc;
+}
+
+.single_log td.header{
+width:60px;
+font-weight:bold;
+color:#292929;
+background-color:#cbcbcb;
+
+}
+
+/******* Utility Callback Funtions and Other admin Pages ********/
+#payment_show_page .client_existing_data .general_info_display  tr, #registering-new-request .client_existing_data .general_info_display  tr, #payment_show_page #Assignment_Details .assignment_info_display tr{
+height:30px;
+background-color:#e3edfc;
+}
+
+
+#payment_show_page .client_existing_data .general_info_display td, #registering-new-request .client_existing_data .general_info_display td, #payment_show_page #Assignment_Details .assignment_info_display td{
+text-align:center;
+width: 220px
+}
+
+#payment_show_page .client_existing_data .align_right, #registering-new-request .client_existing_data .align_right, #payment_show_page #Assignment_Details .align_right{
+font-weight:bold;
+color:#292929;
+background-color:#cbcbcb;
+}
+
+#payment_show_page .client_existing_data, #registering-new-request .client_existing_data{
+width: 100%;
+height: 100%;
+display: inline;
+padding:10px 10px;
+}
+
+
+
+#payment_show_page .client_existing_data #client_particulars_block, #registering-new-request .client_existing_data #client_particulars_block{
+width:50%;
+float:left;
+}
+
+#payment_show_page .client_existing_data #logging_block, #registering-new-request .client_existing_data #logging_block{
+width:45%;
+margin-left:3%;
+float:left;
+}
+
+#payment_show_page #Assignment_Details{
+margin-top:10px;
+clear:both;
+}
+
+#payment_show_page #Assignment_Details .assignment_info_display .align_right{
+	width: 50%;
+	font-weight:bold;
+	font-size:13px;
+	color: #dc0000;
+}
+
+#payment_show_page #Assignment_Details .assignment_info_display tr{
+	height: 25px;
+}
+
+
+/************ Payment Creation and Updating Page **************/
+#client-request-generate-payment-form #row_block, #client-request-update-payment-form #row_block{
+	width: 95%;
+	margin: 0 auto;
+}
+
+#client-request-generate-payment-form #assignment_fieldset, #client-request-update-payment-form #assignment_fieldset{
+	float: left;
+	width: 40%;
+	padding: 5px 5px;
+	font-size: 13px;
+	line-height:15px;
+
+}
+
+#client-request-generate-payment-form #assignment_fieldset table, #client-request-update-payment-form #assignment_fieldset table{
+	margin: 0 auto;
+}
+
+#client-request-generate-payment-form #assignment_fieldset tr, #client-request-update-payment-form #assignment_fieldset tr{
+	height: 25px;
+}
+
+#client-request-generate-payment-form #assignment_fieldset td.assign_field, #client-request-update-payment-form #assignment_fieldset td.assign_field{
+	font-weight: bold;
+	width: 65%;
+}
+
+#client-request-generate-payment-form #payment_fieldset, #client-request-update-payment-form #payment_fieldset{
+	float: left;
+	width: 55%;
+	padding: 5px 5px;
+}
+
+#client-request-generate-payment-form #payment_fieldset h2, #client-request-update-payment-form #payment_fieldset h2{
+	background-color: #D5E9FF;
+	padding: 5px 5px;
+}
+
+#client-request-generate-payment-form #payment_fieldset .fieldset_content, #client-request-update-payment-form #payment_fieldset .fieldset_content{
+	width: 90%;
+	padding: 5px 5px;
+	margin: 0 auto;
+}
+
+#client-request-generate-payment-form .form-submit, #client-request-update-payment-form .form-submit{
+	margin: 10px 0px 10px 15px;
+	line-height: 50px;
+	height: 30px;
+	font-weight: bold;
+}
+
+/****** Invoice Generation Page ******/
+#payment-invoice-form #row1_block, #payment-invoice-form #assignment_fieldset, #payment-invoice-form #info_fieldset{
+	width: 95%;
+	margin: 5px auto;
+}
+
+#payment-invoice-form #invoice_fieldset fieldset, #payment-invoice-form #coordinator_fieldset fieldset, #payment-invoice-form #client_fieldset fieldset{
+	width: 20%;
+	height: 230px;
+	margin: 3px 5px;
+	float: left;
+}
+
+#payment-invoice-form #coordinator_fieldset fieldset, #payment-invoice-form #client_fieldset fieldset{
+	width: 32%;
+}
+
+#payment-invoice-form #assignment_fieldset .assignment_sub_fieldset{
+	float: left;
+	width: 32%;
+	margin: 3px 5px;
+}
+
+#payment-invoice-form #info_fieldset #comments_block, #payment-invoice-form #info_fieldset #info_block{
+	width: 45%;
+	float: left;
+	margin: 3px 5px;
+}
+
+#payment-invoice-form label{
+	color:#282828;
+}
+
+#payment-invoice-form .invoice_clear{
+	width: 100%;
+	clear: both;
+}
+
+#payment-invoice-form .form-submit{
+	margin: 10px 0px 10px 35px;
+	width: 150px;
+	height: 30px;
+	font-weight: bold;
+}
+
+/******* Client Payment Summary and Tutor Payment Summary page ********/
+#client-payment-summary #row1_info{
+	width: 100%;
+	padding: 5px;
+	clear: both;
+}
+
+#client-payment-summary #summary_fieldset{
+	width: 45%;
+	margin: 0px 0px 0px 20px;
+	float: left;
+}
+
+#tutor-payment-summary #summary_fieldset{
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+
+#tutor-payment-summary #summary_fieldset fieldset{
+	height: 60px;
+	line-height: 20px;
+}
+
+#tutor-payment-summary #summary_fieldset .fieldset_content{
+	font-size:15px;
+	line-height:20px;
+	padding: 10px 10px;
+}
+
+#client-payment-summary #summary_fieldset .fieldset_content{
+	font-size:15px;
+	line-height:30px;
+	padding: 10px 10px;
+}
+
+
+#client-payment-summary #summary_fieldset .fieldset_content .summary_field, #tutor-payment-summary #summary_fieldset .fieldset_content .summary_field{
+	color:#E12613;
+	font-size:15px;
+	font-weight:bold;
+	margin-left: 10%;
+}
+
+#client-payment-summary #summary_fieldset .fieldset_content .summary_data, #tutor-payment-summary #summary_fieldset .fieldset_content .summary_data{
+	font-size:16px;
+	font-weight: normal;
+	font-weight:bold;
+}
+
+#client-payment-summary #legend_fieldset{
+	width: 45%;
+	margin: 0px 0px 0px 20px;
+	float: left;
+}
+
+#client-payment-summary #summary_fieldset fieldset, #client-payment-summary #legend_fieldset fieldset{
+	height: 150px;
+}
+
+#client-payment-summary .clear{
+	clear: both;
+}
+
+#client-payment-summary #data_tables table, #tutor-payment-summary table{
+	margin: 0px auto;
+}
+
+#tutor-payment-summary table{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#client-payment-summary .client_table_summary{
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 40px;
+	padding: 5px 5px;
+}
+
+#client-payment-summary #data_tables table .tut_payment_list_row_header, #tutor-payment-summary table .tut_payment_list_row_header{
+	background-color:#DADADA;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	height:20px;
+}
+
+#client-payment-summary #data_tables table .tut_payment_list_row_header th, #tutor-payment-summary  table .tut_payment_list_row_header th{
+	text-align:center;
+}
+
+#client-payment-summary #data_tables table tr{
+	background-color:#D5E9FF;
+}
+
+#tutor-payment-summary table tr.tutor_pay_even_row{
+	background-color:#F7F7F7;
+}
+
+#tutor-payment-summary table tr.tutor_pay_odd_row{
+	background-color:#D5E9FF;
+}
+
+#client-payment-summary #data_tables table td.red{
+	background-color:#f7a1a1;
+}
+
+#client-payment-summary #data_tables table td.green{
+	background-color:#9eff87;
+}
+
+#client-payment-summary #data_tables table td.blue{
+	background-color:#75a9ff;
+}
+
+#client-payment-summary #data_tables table td .overdue{
+	color: #E12613;
+}
+
+#client-payment-summary .form-submit, #tutor-payment-summary .form-submit{
+	margin: 10px 0px 10px 35px;
+	width: 150px;
+	height: 30px;
+	font-weight: bold;
+}
+
+
+/****** Job Attention Page *******/
+
+#admin-attn-form #row_block, 
+#admin-verify-tutors #row_block,
+#admin-approve-photo-form #row_block{
+	margin: 20px auto;
+	width: 90%;
+}
+
+#admin-attn-form #update_fieldset fieldset, #admin-attn-form #info_fieldset fieldset,
+#admin-verify-tutors #update_fieldset fieldset, #admin-verify-tutors #info_fieldset fieldset,
+#admin-approve-photo-form #update_fieldset fieldset, #admin-approve-photo-form #info_fieldset fieldset{
+	width: 45%;
+	height: 130px;
+	margin: 0px 5px;
+	float: left;
+}
+
+#admin-attn-form #update_fieldset .fieldset_content, #admin-attn-form #info_fieldset .fieldset_content,
+#admin-verify-tutors #update_fieldset .fieldset_content, #admin-verify-tutors #info_fieldset .fieldset_content,
+#admin-approve-photo-form #update_fieldset .fieldset_content, #admin-approve-photo-form #info_fieldset .fieldset_content{
+	padding: 5px 5px;
+}
+
+#admin-attn-form #info_fieldset .fieldset_content,
+#admin-verify-tutors #info_fieldset .fieldset_content,
+#admin-approve-photo-form #info_fieldset .fieldset_content{
+	line-height: 16px;
+	font-size: 13px;
+	text-align: justify;
+}
+
+#admin-approve-photo-form #info_fieldset .fieldset_content{
+	font-size: 11px;
+	padding: 2px 2px;
+}
+
+#admin-attn-form .clear,
+#admin-verify-tutors .clear,
+#admin-approve-photo-form .clear{
+	width: 100%;
+	clear: both;
+}
+
+#admin-attn-form #attn_info, 
+#admin-verify-tutors #verify_info,
+#admin-approve-photo-form #photo_apprv_info{
+	color:#E12613;
+	font-size:15px;
+	font-weight:bold;
+	margin: 30px 80px;
+}
+
+#admin-attn-form #attn_info .job_count,
+#admin-verify-tutors #verify_info .job_count,
+#admin-approve-photo-form #photo_apprv_info .job_count{
+	color:black;
+	font-size:17px;
+	font-weight:bold;
+	margin-right:10px;
+}
+
+#admin-attn-form #attn_table,
+#admin-verify-tutors #verify_table,
+#admin-approve-photo-form  #photo_apprv_table{
+	margin: 10px auto;
+}
+
+#admin-attn-form table .attn_table_header,
+#admin-verify-tutors table .verify_table_header,
+#admin-approve-photo-form table .photo_apprv_table_header{
+	background-color:#DADADA;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	height:35px;
+}
+
+#admin-attn-form  table .attn_table_header th,
+#admin-verify-tutors  table .verify_table_header th,
+#admin-approve-photo-form  table .photo_apprv_table_header th{
+	text-align:center;
+}
+
+#admin-attn-form  table tr.attn_even_row,
+#admin-verify-tutors  table tr.verify_even_row,
+#admin-approve-photo-form  table tr.photo_apprv_even_row{
+	background-color:#F7F7F7;
+}
+
+#admin-attn-form  table tr.attn_odd_row,
+#admin-verify-tutors  table tr.verify_odd_row,
+#admin-approve-photo-form  table tr.photo_apprv_odd_row{
+	background-color:#D5E9FF;
+}
+
+#admin-attn-form  .form-submit,
+#admin-approve-photo-form  .form-submit{
+	margin: 10px 0px 10px 35px;
+	width: 150px;
+	height: 30px;
+	font-weight: bold;
+}
+
+/******** Client Search Results page *******/
+#client_search_results #search_error{
+	font-size:15px;
+	font-weight:bold;
+	line-height:30px;
+	margin:0 auto;
+	padding:50px 0;
+	text-align:center;
+}
+
+
+#client_search_results #client_search_info{
+	height: 30px;
+	margin-left: 60px;
+	color:#E12613;
+	font-size:15px;
+	font-weight:bold;
+	margin: 30px 80px;
+}
+
+#client_search_results #client_search_info .client_count{
+	color:black;
+	font-size:17px;
+	font-weight:bold;
+	margin-right:10px;
+}
+
+#client_search_results .client_data{
+	width: 95%;
+	margin: 10px auto;
+	margin-bottom: 50px;
+}
+
+#client_search_results #client_particulars_block{
+	width: 50%;
+	float: left;
+}
+
+#client_search_results #client_particulars_block tr{
+	height: 30px;
+	background-color:#E3EDFC;
+}
+
+#client_search_results #client_particulars_block td{
+	width: 200px;
+}
+
+#client_search_results #client_particulars_block td.align_right{
+	background-color:#CBCBCB;
+	color:#292929;
+	font-weight:bold;
+	text-align:center;
+}
+
+#client_search_results #logging_block{
+	width: 40%;
+	float: left;
+}
+
+
+#client_search_results .clear{
+	width:100%;
+	clear: both;
+}
+
+/**** Progress Report Theming ****/
+
+#coordinator-outstanding-commission-display .assign_status_header{
+font-size: 15px;
+font-weight: bold;
+color: #3936FF;
+margin-left: 20px;	
+}
+
+table.progress_ongoingAssign_table{
+width:95%;
+margin:auto auto;
+font-size:11px;
+}
+
+table.progress_ongoingAssign_table{
+margin:10px auto;
+}
+
+table.progress_ongoingAssign_table tr{
+height:30px;
+background-color:#f7f7f7;
+}
+
+table.progress_ongoingAssign_table tr.multiple_handlers{
+background-color:#d5e9ff;
+}
+
+table.progress_ongoingAssign_table tr.progress_ongoingAssign_header{
+text-align:center;
+background-color:#DADADA;
+font-size:12px;
+font-weight:bold;
+}
+
+table.progress_ongoingAssign_table tr.progress_ongoingAssign_total{
+text-align:center;
+background-color:#DADADA;
+font-size:12px;
+font-weight:bold;
+}
+
+table.progress_ongoingAssign_table th, table.progress_ongoingAssign_table td{
+text-align:center;
+}

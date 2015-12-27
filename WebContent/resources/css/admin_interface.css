@@ -1,0 +1,240 @@
+/* Theming for all admin interfaces */
+
+/* Assignment Bidding System Theming */
+div.admin_publish_row{
+clear:both;
+}
+
+table.admin_publish_assgn_table{
+float:left;
+width:600px;
+}
+
+#assign_publish_status{
+float:left;
+width:300px;
+margin-top:80px;
+font-size:16px;
+}
+
+span.assign_publish_p{
+color:#15A102;
+font-weight:bold;
+}
+
+span.assign_publish_np{
+color:#FF1200;
+font-weight:bold;
+}
+
+#recent_assignments_count{
+width: 400px;
+color:#E12613;
+font-size:14px;
+font-weight:bold;
+width: 800px;
+height: 30px;
+line-height:30px;
+margin:0 auto;
+text-align: center;
+background-color: #e7e7e7
+}
+
+#recent_assignments_count #recent_assignments_count_number{
+color:black;
+font-size:16px;
+font-weight:bold;
+margin-right:5px;
+}
+
+/* Recent assignment page viewable by public and assignment central in tutor account pages*/
+div.recent_assignment_row, div.tutor_assignment_row{
+width:auto;
+margin:15px auto;
+position: center;
+font-size:13px;
+}
+
+#bidding_search_box #bidding_area_searchrow, #bidding_search_box #bidding_level_searchrow{
+width: 830px;
+height: 45px;
+margin-top: 15px;
+margin-left: 5px;
+}
+
+#bidding_search_box #bidding_level_searchrow{
+height: 60px;
+}
+
+
+#bidding_search_box .searchfield_label{
+color: #E12613;
+font-size: 14px;
+font-weight: bold;
+float: left;
+display: inline;
+width: 60px;
+height: 40px;
+}
+
+#bidding_search_box #level_label{
+margin-top: 10px;
+}
+
+#bidding_search_box #bidding_area_searchfield, #bidding_search_box #bidding_level_searchfield{
+width: 720px;
+height: 40px;
+background-color: #E0F4FF;
+float: left;
+margin-left: 20px;
+}
+
+#bidding_search_box #bidding_area_searchfield .form-checkboxes, #bidding_search_box #bidding_level_searchfield .form-checkboxes{
+margin: 0px 0px;
+margin-left: 15px;
+}
+
+#bidding_search_box #bidding_level_searchfield{
+height: 60px;
+}
+
+#bidding_search_box .clear{
+clear: both;
+height: 1px;
+width: 800px;
+}
+
+#bidding_search_box #bidding_area_searchfield .form-checkboxes .form-item{
+width: 100px;
+height: 15px;
+float: left;
+}
+
+#bidding_search_box #bidding_level_searchfield .form-checkboxes .form-item{
+width: 140px;
+height: 15px;
+float: left;
+}
+
+#bidding_search_box #bidding_search_submit{
+margin: 15px auto;
+width: 150px;
+}
+
+
+/* in tutor account pages, assignment central */
+div.tutor_assignment_row{
+width:auto;
+margin:15px auto;
+padding:0px 0px;
+font-size:12px;
+}
+
+div.recent_assignment_row .recent_assignment_table, div.tutor_assignment_row .tutor_assignment_table{
+background-color: #EDEDED;
+padding:10px 10px;
+width:800px;
+margin:0 auto;
+}
+/*
+div.tutor_assignment_row .p, div.tutor_assignment_row .c{
+background-color: #EDEDED;
+}
+*/
+/* in tutor account pages, assignment central */
+div.tutor_assignment_row .tutor_assignment_table{
+
+}
+
+div.recent_assignment_row .recent_assignment_table table, div.tutor_assignment_row .tutor_assignment_table table{
+/*width:730px;*/
+margin: 0 auto;
+position: center;
+}
+
+div.recent_assignment_row .recent_assignment_table table tr, div.tutor_assignment_row .tutor_assignment_table table tr{
+height: 25px;
+}
+
+div.recent_assignment_row .recent_assignment_table table tr td.request_id, div.tutor_assignment_row .tutor_assignment_table table tr td.request_id{
+height: 25px;
+color: #0046D5;
+font-size: 17px;
+font-weight: bold;
+}
+
+div.recent_assignment_row .recent_assignment_table table tr td.assignment_status span.status_new, div.tutor_assignment_row .tutor_assignment_table table tr td.assignment_status span.status_new{
+height: 25px;
+color: #ffc000;
+font-size: 19px;
+font-weight: bold;
+}
+
+div.recent_assignment_row .recent_assignment_table table tr td.assignment_status span.status_old, div.tutor_assignment_row .tutor_assignment_table table tr td.assignment_status span.status_old{
+height: 25px;
+color: #28be14;
+font-size: 19px;
+font-weight: bold;
+}
+
+/* The additional information text for the assignment*/
+div.recent_assignment_row .recent_assignment_info, div.tutor_assignment_row .tutor_assignment_info{
+/*width:790px;*/
+margin:10px auto;
+position: center;
+line-height:20px;
+}
+
+/* Bidding Button */
+div.recent_assignment_row .recent_assignment_bid{
+/*margin:10px auto;*/
+width:150px;
+height:30px;
+}
+
+/*withdraw button*/
+div.tutor_assignment_row .tutor_assignment_withdraw{
+text-align:right;
+margin:0px 30px 0px 0px;
+}
+/* The title text of each field in the assignment table */
+div.recent_assignment_row .recent_assignment_table td.Descriptor, div.tutor_assignment_row .tutor_assignment_table td.Descriptor{
+font-weight:bold;
+color: #CC0000;
+}
+
+div.assignment_fieldset{
+width:860px;
+margin:10px auto;
+}
+
+.assignment_fieldset legend{
+font-size:14px;
+font-weight:bold;
+color:#0046d5;
+}
+
+/* tutor pages "view more assignment" button */
+.assignment_fieldset #tutor_assignment_view{
+padding-top:10px;
+padding-bottom:10px;
+font-size:14px;
+}
+
+
+div.assignment_no_result, div.assignment_no_result_public{
+text-align:center;
+font-size:15px;
+margin:20px auto 20px auto;
+font-weight:bold;
+}
+
+div.assignment_no_result_public{
+margin:50px auto 50px auto;
+}
+
+div.assignment_row_separater{
+clear:both;
+width:auto;
+}
+/******************************************/

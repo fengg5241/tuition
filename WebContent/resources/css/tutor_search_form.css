@@ -1,0 +1,486 @@
+/* This is the CSS template for themeing the search tutor form */
+/* 2 major elements are themed here, namely the search box and the teaser profile */
+
+#search_show_hide{
+background-color: #FFAB01;
+font-weight:bold;
+font-size:120%;
+margin-top:15px;
+padding-top:5px;
+padding-bottom:5px;
+text-align:center;
+}
+
+#search_show_hide input{
+margin-left:20px;
+}
+
+/* Search Box Theme */
+#full_search_area{
+width: 840px;
+position: center;
+margin: 0px auto;
+padding: 0px 0px;
+background-color: #F3F3F3;
+border-width: thin;
+border-style: solid;
+border-color: #AAAAAA;
+margin-top:20px;
+}
+
+/* search block implementation*/
+#search_block_full_area, #front_intro_msg_full_area{
+width: 525px;
+position: center;
+margin: 0px auto;
+padding: 0px 0px;
+}
+
+#front_intro_msg_text{
+margin:0px auto;
+padding:20px 10px 30px 10px;
+font-size:13px;
+font-weight:bold;
+color:#292929;
+width:450px;
+line-height:20px;
+
+}
+
+/*phase 1 launch hide the search block, use this intro message instead */
+/*{
+width: 495px;
+padding:15px 15px;
+padding-bottom:30px;
+position: center;
+margin: 0px auto;
+font-size:14px;
+line-height:25px;
+}
+*/
+/*
+#intro_msg_head{
+color:#ED4300
+}
+*/
+#search_title{
+	color: #555555;
+	font-weight: bold;
+	font-size:15px;
+	margin-left:30px;
+	margin-top:10px;
+}
+
+/* search block implementation*/
+#full_search_area fieldset, #search_block_full_area fieldset{
+border-style: none;
+}
+
+#search_block_row1 fieldset{
+padding:0px 0px;
+margin:0px 0px;
+}
+
+/* search block implementation*/
+.search_category_title, .search_block_category_title{
+color: #E71E00;
+font-size: 13px;
+font-weight: bold;
+padding:5px 0px ;
+}
+
+/* The Subject header */
+/* search block implementation*/
+#search_category_title_subject, #search_block_category_title_subject{
+margin-left:20px;
+}
+
+/* The Personal particulars header */
+#search_category_title_personal_p{
+margin-bottom:15px;
+}
+
+#search_column_1{
+width: 420px;
+display:block;
+float:left;
+display:inline;
+margin-top:10px;
+}
+
+#search_column_1 fieldset{
+padding:0px 0px;
+border-width: 0px;
+border-style: none;
+}
+
+#level_and_subject{
+width: 400px;
+}
+
+/* search block implementation*/
+#select_by_level, #search_block_select_by_level{
+margin-left:10px;
+float:left;
+display:inline;
+font-size:100%;
+width:130px;
+}
+
+/* search block implementation*/
+#search_block_select_by_level{
+margin-left:20px;
+}
+
+#select_by_subject {
+margin-left:10px;
+background-color:#E5E5E5;
+float:left;
+font-size:80%;
+width:250px;
+}
+
+/* search block implementation*/
+#search_block_select_by_subject{
+margin-left:30px;
+font-size:90%;
+float:left;
+width:300px;
+}
+
+/* each individual checkbox element */
+/* search block implementation*/
+#select_by_subject .form-item, #search_block_select_by_subject .form-item{  
+width:105px;
+height: auto;
+font-size: 100%;
+float:left;
+padding:0px 0px 0px 15px;
+margin: 0px 0px 0px 0px;  
+}
+
+/* search block implementation*/
+#search_block_select_by_subject .form-item{
+margin-left:20px;
+}
+
+/* search block implementation*/
+#search_block_tuition_area{
+margin-top: 10px;
+margin-left:20px;
+height:23px;
+}
+/* search block implementation*/
+#search_block_tuition_area .search_block_category_title{
+float:left;
+padding: 0px 0px;
+line-height: 23px;
+width:70px;
+}
+
+/* search block implementation*/
+#search_block_tuition_area .form-item{
+margin:0px 0px;
+padding: 0px 0px;
+}
+
+/* search block implementation*/
+#search_block_advanced_search{
+margin-left:20px;
+margin-top:20px;
+}
+
+.column1_object{
+margin-top:50px;
+margin-left:10px;
+padding:0px 0px;
+}
+
+
+#search_column_2{
+width: 400px;
+font-size: 100%;
+float:left;
+margin-top:10px;
+}
+
+/*
+#search_column_2 fieldset{
+height: auto;
+}
+*/
+
+.column2_object{
+margin:0px 0px 0px 0px;
+}
+
+/*the objects inside column 2 */
+
+.column2_object .form-item{  
+display: inline;
+}
+
+/* tutor sort and category */
+#search_sort_category{
+width:400px;
+height:50px;
+margin: 0px 0px;
+margin-top:10px;
+display: block;
+}
+
+#search_sort_category .column2_object{
+margin-right:40px;
+float:left;
+}
+
+#tutor_rate, #rate_title{
+margin-top:10px;
+}
+
+#advanced_box_SGD_input{
+height:35px;
+}
+
+#advanced_box_SGD_input .advanced_item{
+line-height:35px;
+height:35px;
+float:left;
+display:inline;
+}
+
+#selection{
+width:160px;
+height:auto;
+float:left;
+}
+
+/*advance rate box*/
+
+#selection input, #selection select{		
+display:block;
+margin-top:0.5em;
+}
+ 
+#calculation{
+margin-top:20px;
+font-size:14px;
+} 
+
+/*
+#search_sort_category .form-item{ 
+margin-right: 10px;
+margin-bottom: 10px;
+}
+*/
+
+#search_form_submit{
+width:118px;
+height:30px;
+position: center;
+margin:10px auto;
+margin-bottom:20px;
+}
+
+#search_form_submit .form-submit{
+width:118px;
+height:30px;
+background:transparent url(images/btn_search.jpg) no-repeat center;
+border:none;
+cursor:pointer;
+font-size:0pt;
+}
+
+/******************************/
+/* Post-Search user profile Theme */
+/******************************/
+
+#search_no_results{
+font-size:15px;
+line-height:30px;
+font-weight:bold;
+margin:0px auto;
+padding:150px 0px 150px 0px;
+text-align:center;
+}
+
+#search_results_page{
+	width: 900px;
+}
+
+#search_box_block, #search_profiles_block{
+	display: block;
+	width: 900px;
+}
+
+/* main wrapper */
+.search_profile_container{  
+	display:block;
+	width: 820px;
+	margin: 25px auto;
+}
+
+.search_profile_column1{
+	display: block;
+	display:inline;
+	width: 180px;
+	float: left;
+}
+
+.search_profile_column2{
+	display: block;
+	float: left;
+	width: 620px;
+	margin-left:0px;
+/*
+font-size: 13px;
+line-height: 150%;
+text-align: justify;
+*/
+}
+
+.search_object_uid{
+	display:inline;
+	margin-left:25px;
+	/*color: #3A0FFA;*/
+	font-weight: bold;
+}
+
+
+.search_profile_column1 .picture{
+	margin: 5px;
+	text-align: center;
+}
+
+#search_tutor_verified{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.search_user_particulars{
+	background-color: #F2F2F2;
+	width: 160px;
+	margin:0px auto;
+	margin-top: 10px;
+}
+
+.search_user_particulars table{
+	width: 150px;
+	margin-top:10px;
+	margin-bottom: 10px;
+	color: #333333;
+	border-collapse: separate;
+}
+
+.search_user_particulars td.search_table_field{
+	font-weight: bold;
+	padding:5px 3px 5px 5px;
+}
+
+.search_user_particulars td.search_table_data{
+	font-weight: normal;
+	padding:5px 0px 5px 5px;
+}
+
+.search_object_name{
+	height:25px;
+	margin-left:15px;
+	font-weight:bold;
+	font-size:18px;
+	color: #9C0101;
+	border-bottom: thin solid #FAB807;
+}
+
+.search_add_compare_links{
+	margin: 0px auto;
+	text-align:center;
+	height: 15px;
+	display: block;
+}
+
+.myshortlist, .compare_tutor{
+	margin-left: 80px;
+	line-height:30px;
+	float: left;
+}
+
+#search_profile_info_block{
+	margin-left:30px;
+}
+
+.search_profile_category{
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.search_profile_header{
+	color:#1382B9;
+	font-weight: bold;
+	font-size:15px;
+	margin-bottom:5px;
+	letter-spacing:1px;
+}
+
+/* only qualifications have headers and content tent (A Levels etc) */
+#search_profile_info_block .qual_header{
+	margin:0px 0px;
+	padding:0px 0px;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration: underline;
+}
+
+#search_profile_info_block .qual_content{
+	margin:0px 0px;
+	margin-left: 15px;
+	font-size:12px;
+	padding:0px 0px;
+	text-align: left;
+	line-height:20px;
+}
+
+#search_profile_category_1 .search_profile_content, #search_profile_category_2 .search_profile_content, #search_profile_category_3 .search_profile_content{
+	line-height:20px;
+}
+
+#search_profile_category_3 .search_profile_content{
+	overflow:auto;
+	margin-top:10px;
+	/*height:110px;*/
+}	
+
+#search_profile_category_3 table{
+	margin:0px auto;
+	text-align: center;
+	border-collapse: separate;
+	border-width:2px;
+	border-style:solid;
+	border-color: #BFBFBF;
+}
+
+#search_profile_category_3 tr td.Description{
+	background-color: #F3F3F3;
+	color: #1F1F1F;
+	font-weight: bold; 
+	font-size:13px;
+}
+
+#search_profile_category_3 tr td.Content{
+	background-color: #EDEDED;
+	font-weight: bold; 
+	font-size:12px;
+}
+
+#search_profile_category_3 td{
+	margin:0px auto;
+	padding: 5px 5px;
+	text-align: center;
+}
+
+
+.search_profile_internal_clearer{ /* This is a structural CSS hack to force the profile_container to cover over                 */
+	width: 820px;
+	height:1px;
+	display:block;					  /* the bottom of the floated elements. This works because now the container have to      */
+	clear:both;						  /* cover the internal clearer below the floated element as well, which is a block display */
+}
