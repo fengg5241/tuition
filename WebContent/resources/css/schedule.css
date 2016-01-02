@@ -1,0 +1,81 @@
+/*********************************************************************************************
+*******************30/6/2008*****************************************************************
+*********************************************************************************************/
+
+div.schedule_table table {
+background:#FFFFFF;
+margin:.3em auto;
+font-weight: bold; 
+border: 0px;
+border-collapse: separate;
+}
+
+div.schedule_table table th {
+text-align:center;
+color: #666666;
+border: 0px;
+width:10%;
+}
+
+div.schedule_table table td {
+background:#f5f5f5;
+border-collapse: separate;
+width:2.2em;
+text-align:center;
+border: 0px;
+}
+
+div.schedule_table table td.firstrow{
+text-align: right;
+width:1.0em;
+background:#FFF;
+border-collapse: separate;
+border-spacing: 3px
+}
+
+div.schedule_table table td a {
+color:#333;
+display:block;
+line-height:1.7em;
+text-align:center;
+text-decoration:none;
+}
+
+
+div.schedule_table table td a:hover{
+width: 100%;
+background:#77b0d3;
+color:#fff;
+}
+
+div.schedule_table table td a.selected {
+width: 100%;
+background:#FF9900;
+color:#fff;
+}
+
+div.schedule_table table td.selected {
+background:#FF9900;
+color:#fff;
+}
+
+div.schedule_submit a{
+font-size:120%;
+}
+
+div.schedule_submit a:hover{
+}
+
+div.submit_note {
+font-size:120%;
+color: red;
+}
+
+div.preferences{ 
+	padding:12px;
+	background:#eee;
+	clear:both;  /* CLEAR BOTH ADDED BY JANUS */
+} 
+/*********************************************************************************************
+*******************30/6/2008*****************************************************************
+*********************************************************************************************/

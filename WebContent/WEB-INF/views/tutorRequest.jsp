@@ -56,7 +56,7 @@ Tutor Request | Temasek Tutors | Tuition Services, Singapore</title>
 
 <div id="block-home-5" class="block block-home">
 
-  <div id="Login_Logout_Linker" class="content"><a href="./user">Tutor Login</a></div>
+  <div id="Login_Logout_Linker" class="content"><a href="/tuition/login">Tutor Login</a></div>
 </div>
 				</div>
 				
@@ -84,7 +84,7 @@ Tutor Request | Temasek Tutors | Tuition Services, Singapore</title>
 					
 			<!-- Region: content -->
 			
-							<form action="/requesting_tutor" accept-charset="UTF-8" method="post" id="requesting-tutor-form">
+							<form action="/tuition/requesting_tutor" accept-charset="UTF-8" method="post" id="requesting-tutor-form">
 <div><div id="req_info_fieldset"><fieldset><legend>Need Help?</legend><div id="req_info_internal_data">Please fill in the form below to indicate your tuitioning preferences. We will get back to 
 				you as soon as we have processed your request. This will usually take no more than one working day.
 				Alternatively, you can call us at <span id="req_contact_no"><b>65574130</b></span> or email us with our <a href="./contact">contact form</a>.<br><br>Thank You.</div></fieldset>
@@ -1102,7 +1102,7 @@ directly, unless otherwise stated. Tutors should not collect the payment
   <div class="content">
 <ul class="menu">
 <li class="leaf"><a href="./" title="Return to Front Page">Home</a></li>
-<li class="leaf"><a href="./user" title="Tutors Login">Login</a></li>
+<li class="leaf"><a href="/tuition/login" title="Tutors Login">Login</a></li>
 <li class="leaf"><a href="./terms" title="User Agreement">Terms and Conditions</a></li>
 <li class="leaf"><a href="./privacy" title="Privacy Policy">Privacy Policy</a></li>
 <li class="leaf"><a href="./contact" title="Contact Us">Contact</a></li>

@@ -53,7 +53,7 @@ Frequently Asked Questions | Temasek Tutors | Tuition Services, Singapore</title
 
 <div id="block-home-5" class="block block-home">
 
-  <div id="Login_Logout_Linker" class="content"><a href="./user">Tutor Login</a></div>
+  <div id="Login_Logout_Linker" class="content"><a href="/tuition/login">Tutor Login</a></div>
 </div>
 				</div>
 				
@@ -476,7 +476,7 @@ using the labeled grey tabs on the same page. </p>
   <div class="content">
 <ul class="menu">
 <li class="leaf"><a href="./" title="Return to Front Page">Home</a></li>
-<li class="leaf"><a href="./user" title="Tutors Login">Login</a></li>
+<li class="leaf"><a href="/tuition/login" title="Tutors Login">Login</a></li>
 <li class="leaf"><a href="./terms" title="User Agreement">Terms and Conditions</a></li>
 <li class="leaf"><a href="./privacy" title="Privacy Policy">Privacy Policy</a></li>
 <li class="leaf"><a href="./contact" title="Contact Us">Contact</a></li>

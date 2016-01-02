@@ -1,0 +1,105 @@
+
+.nav a, .nav a:active, .nav a:visited {
+	height:20px;
+	display:block;
+	text-align: center;
+	float:left;
+	background-image: url("/tuition/resources/css/images/tab_bg.jpg");
+	border-width:2px;
+	border-color:#BDBDBD;
+	border-style:solid;
+	line-height: 20px;
+	font-weight: bold;
+	color: #8F090B;
+	padding:5px 5px;
+	margin:5px 5px;
+}
+
+
+.nav a.selected, .nav a.selected:active, .nav a.selected:visited {
+	background-image: none;
+	background-color: #A2A6DA;
+	height:20px;
+	text-decoration:none;
+	outline:none;
+}
+
+	.area_hiddencontent,.subject_hiddencontent, .qualifications_hiddencontent, .writeup_hiddencontent { /*.writeup_hiddencontent ADDED BY JANUS */
+	padding:10px;
+	display:none;
+	clear:both;  /* CLEAR BOTH ADDED BY JANUS */
+	} 
+	
+.clear {
+	clear:both;
+	}
+	
+div.schedule_table table {
+background:#a1a5a9;
+color:#000;
+margin:.3em auto;
+}
+
+div.schedule_table table th {
+background:#eee;
+text-align:center;
+width:10%;
+}
+
+div.schedule_table table td {
+background:#f9f9f9;
+padding:0;
+width:2.2em;
+text-align:center;
+}
+
+div.schedule_table table td.firstrow{
+background:#e9e9e9;
+}
+
+div.schedule_table table td a {
+color:#333;
+display:block;
+line-height:1.7em;
+text-align:center;
+text-decoration:none;
+}
+
+
+div.schedule_table table td a:hover{
+width: 100%;
+background:#77b0d3;
+color:#fff;
+padding:0;
+}
+
+div.schedule_table table td a.selected {
+width: 100%;
+
+background:#0072b9;
+color:#fff;
+}
+
+div.schedule_table table td.selected {
+background:#0072b9;
+color:#fff;
+}
+
+div.schedule_submit a{
+
+background:#000;
+color:#fff;
+}
+
+div.schedule_submit a:hover{
+
+background:#ccc;
+color:#000;
+}
+
+div.submit_note {
+
+background:#ccc;
+color: red;
+}
+

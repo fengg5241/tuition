@@ -56,7 +56,7 @@ Temasek Tutors | Tuition Services, Singapore</title>
 
 <div id="block-home-5" class="block block-home">
 
-  <div id="Login_Logout_Linker" class="content"><a href="./user">Tutor Login</a></div>
+  <div id="Login_Logout_Linker" class="content"><a href="/tuition/login">Tutor Login</a></div>
 </div>
 				</div>
 				

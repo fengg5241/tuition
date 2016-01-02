@@ -29,11 +29,13 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 	@Override
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler) throws Exception {
+
 		StringBuffer requestURL = request.getRequestURL();
 		if (requestURL.indexOf("/resources/") != -1 || requestURL.indexOf(".js") != -1 
 				|| requestURL.indexOf(".png") != -1|| requestURL.indexOf(".jpg") != -1) {
 			return true;
 		}
+		
 		if (request.getRequestURL().indexOf("login") != -1 || request.getRequestURL().indexOf("register") != -1) {
 			return true;
 		}else {
@@ -44,6 +46,10 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 //			}else {
 //				return true;
 //			}
+			if(request == null || request.getSession(false) == null){
+				response.sendRedirect(request.getContextPath()+"/login");
+				return false;
+			}
 			return true;
 		}
 	}

@@ -21,10 +21,9 @@ import com.shan.model.LoginForm;
 import com.shan.model.User;
 
 @Controller
-@RequestMapping("/user")
-public class UserController {
+public class LoginController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
 	@Autowired
 	private UserManager usermanager;
@@ -32,13 +31,13 @@ public class UserController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "", method = RequestMethod.GET)
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String goToLoginPage(Locale locale, Model model) {
 		
 		return "login";
 	}
 	
-	@RequestMapping(value = "", method = RequestMethod.POST)
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String checkUserLogin(HttpServletRequest request) {
 		String loginName = request.getParameter("name");
 		String password = request.getParameter("pass");
@@ -63,41 +62,6 @@ public class UserController {
 		request.getSession().removeAttribute("userId");
 		HttpSession session = request.getSession();
 		session.invalidate();
-		return "redirect:/user";
+		return "redirect:/login";
 	}
-	
-	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String login(HttpServletRequest request) {
-		String mail = request.getParameter("mail");
-		String pass1 = request.getParameter("pass1");
-		String pass2 = request.getParameter("pass2");
-			
-		User user = new User();
-		user.setLoginName(mail);
-		user.setPassword(pass1);
-		
-		usermanager.addUser(user);
-		
-		return "redirect:/user/"+user.getId()+"/edit";
-	}
-	
-	@RequestMapping(value="/{userId}",method=RequestMethod.GET)
-	public String goToViewPage(Model model,@PathVariable("userId") long userId){
-		//search id info
-		return "profileView";
-	}
-	
-	@RequestMapping(value="/{userId}/edit",method=RequestMethod.GET)
-	public String goToEditPage(Model model,@PathVariable("userId") long userId){
-		//search id info
-		return "profileEdit";
-	}
-	
-	@RequestMapping(value = "/register", method = RequestMethod.GET)
-	public String goToRegisterPage(Locale locale, Model model) {
-		
-		
-		return "register";
-	}
-	
 }

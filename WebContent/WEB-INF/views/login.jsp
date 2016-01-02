@@ -51,7 +51,7 @@ Tutor Login | Temasek Tutors | Tuition Services, Singapore</title>
 
 <div id="block-home-5" class="block block-home">
 
-  <div id="Login_Logout_Linker" class="content"><a href="./user" class="active">Tutor Login</a></div>
+  <div id="Login_Logout_Linker" class="content"><a href="/tuition/login" class="active">Tutor Login</a></div>
 </div>
 				</div>
 				
@@ -75,7 +75,7 @@ Tutor Login | Temasek Tutors | Tuition Services, Singapore</title>
 							<div class="tabs">
 					<ul class="tabs primary">
 <li><a href="./user/register">Create new account</a></li>
-<li class="active"><a href="./user" class="active">Log in</a></li>
+<li class="active"><a href="/tuition/login" class="active">Log in</a></li>
 <li><a href="./user/password">Request new password</a></li>
 </ul>
 				</div>
@@ -86,7 +86,7 @@ Tutor Login | Temasek Tutors | Tuition Services, Singapore</title>
 					
 			<!-- Region: content -->
 			
-							<form action="/user" accept-charset="UTF-8" method="post" id="user-login">
+							<form action="/tuition/login" accept-charset="UTF-8" method="post" id="user-login">
 <div><div id="user-login-internal-data"><div class="form-item">
  <label for="edit-name">E-mail: <span class="form-required" title="This field is required.">*</span></label>
  <input style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;" maxlength="60" name="name" id="edit-name" size="60" tabindex="1" class="form-text required" type="text">
@@ -99,11 +99,11 @@ Tutor Login | Temasek Tutors | Tuition Services, Singapore</title>
 </div>
 <input name="form_id" id="edit-user-login" value="user_login" type="hidden">
 <input name="seed" id="edit-seed" value="a18b83c7234ad69d17fc9338a75a6a7f" type="hidden">
-<img src="resources/images/a18b83c7234ad69d17fc9338a75a6a7f.jpg"><div class="form-item">
- <label for="edit-captcha-answer">Answer: <span class="form-required" title="This field is required.">*</span></label>
- <input maxlength="128" name="captcha_answer" id="edit-captcha-answer" size="25" class="form-text required" type="text">
- <div class="description">We'll first need to verify that you are a human and not a bot. Please type in the code you see above to proceed.</div>
-</div>
+<!-- <img src="resources/images/a18b83c7234ad69d17fc9338a75a6a7f.jpg"><div class="form-item"> -->
+<!--  <label for="edit-captcha-answer">Answer: <span class="form-required" title="This field is required.">*</span></label> -->
+<!--  <input maxlength="128" name="captcha_answer" id="edit-captcha-answer" size="25" class="form-text required" type="text"> -->
+<!--  <div class="description">We'll first need to verify that you are a human and not a bot. Please type in the code you see above to proceed.</div> -->
+<!-- </div> -->
 <input name="op" id="edit-submit" value="Log in" tabindex="3" class="form-submit" type="submit">
 </div>
 </div></form>
@@ -127,7 +127,7 @@ Tutor Login | Temasek Tutors | Tuition Services, Singapore</title>
   <div class="content">
 <ul class="menu">
 <li class="leaf"><a href="./" title="Return to Front Page">Home</a></li>
-<li class="leaf"><a href="./user" title="Tutors Login" class="active">Login</a></li>
+<li class="leaf"><a href="/tuition/login" title="Tutors Login" class="active">Login</a></li>
 <li class="leaf"><a href="./terms" title="User Agreement">Terms and Conditions</a></li>
 <li class="leaf"><a href="./privacy" title="Privacy Policy">Privacy Policy</a></li>
 <li class="leaf"><a href="./contact" title="Contact Us">Contact</a></li>
