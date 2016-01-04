@@ -51,6 +51,9 @@ public class TutorController {
 		String otherRequests = request.getParameter("LOG_TABLE__SPECIAL_REQ");
 		String availableTimeslot = request.getParameter("available_timeslot");
 		String startDate = request.getParameter("start_date");
+		String subjectAndLevel = request.getParameter("requestSubjectAndLevel");
+		String genderPerference = request.getParameter("gender_pref");
+		String region = request.getParameter("region");
 		
 		
 		long userId = (long)request.getSession().getAttribute("userId");
@@ -61,7 +64,7 @@ public class TutorController {
 		assignment.setUserId(userId);
 		assignment.setAvailableTimeslot(availableTimeslot);
 		assignment.setBudget(budget);
-//		assignment.setGenderPerference(genderPerference);
+		assignment.setGenderPerference(genderPerference);
 		assignment.setLessonCountPerWeek(lessonCountPerWeek);
 		assignment.setOtherRequests(otherRequests);
 		assignment.setPostal(postal);
@@ -70,6 +73,8 @@ public class TutorController {
 		assignment.setSecondaryContactNumber(secondaryContactNumber);
 		assignment.setSessionLength(sessionLength);
 		assignment.setStartDate(startDate);
+		assignment.setSubjectAndLevel(subjectAndLevel);
+		assignment.setRegion(region);
 		
 		assignmentManager.addAssignment(assignment);
 		return "tutorRequest";

@@ -115,7 +115,38 @@ Tutor Request | Temasek Tutors | Tuition Services, Singapore</title>
  <label for="edit-Client-Postal">Postal: </label>
  <input maxlength="128" name="Client-Postal" id="edit-Client-Postal" size="20" class="form-text" type="text">
 </div>
-</div></fieldset>
+</div>
+<div style="display: block;" class="reduce_class"><div class="form-item">
+ <b>Region: (Please choose region which can make your request be searched by tutor much easier)</b>
+ <br>
+<div class="form-checkboxes">
+<!-- <div class="form-item"> -->
+ <label class="option"><input type="radio" class="form-radio" value="East" name="region"> East</label>
+<!-- </div> -->
+<!-- <div class="form-item"> -->
+ <label class="option"><input type="radio" class="form-radio" value="Central" name="region"> Central</label>
+<!-- </div> -->
+<!-- <div class="form-item"> -->
+ <label class="option"><input type="radio" class="form-radio" value="North" name="region"> North</label>
+<!-- </div> -->
+<!-- <div class="form-item"> -->
+ <label class="option"><input type="radio" class="form-radio" value="North-East" name="region"> North-East</label>
+<!-- </div> -->
+<!-- <div class="form-item"> -->
+ <label class="option"><input type="radio" class="form-radio" value="North-West" name="region"> North-West</label>
+<!-- </div> -->
+<!-- <div class="form-item"> -->
+ <label class="option"><input type="radio" class="form-radio" value="South" name="region"> South</label>
+<!-- </div> -->
+<!-- <div class="form-item"> -->
+ <label class="option"><input type="radio" class="form-radio" value="West" name="region"> West</label>
+<!-- </div> -->
+</div>
+
+<!--  <input maxlength="128" name="Client-Region" id="edit-Client-Region" size="20" class="form-text" type="text"> -->
+</div>
+</div>
+</fieldset>
 </div></td></tr></tbody></table><div style="display: block;" class="reduce_class"><table class="req_row reduce_class" id="req_row_2"><tbody><tr>
 			 <td class="req_category_title">Student Information</td><td class="req_bar">&nbsp;</td><td class="req_content"><div id="req_student_fieldset" class="">
 <!-- 			 <div><b>Subjects Selected: </b><div class="req_student" id="show_checkbox_choice"></div></div><br> -->
@@ -1080,7 +1111,7 @@ directly, unless otherwise stated. Tutors should not collect the payment
 </div></fieldset>
 </div></td></tr></tbody></table></div><div id="req_captcha reduce_class"></div><div id="req_submit"><input name="op" id="edit-submit" value="I Agree to the terms, Submit Tutor Request" class="form-submit" type="submit">
 </div><input name="form_id" id="edit-requesting-tutor-form" value="requesting_tutor_form" type="hidden">
-
+<input name="requestSubjectAndLevel" id="requestSubjectLevelHiddenInput" type="hidden">
 </div></form>
 						
 		</div>

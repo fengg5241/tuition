@@ -32,7 +32,13 @@ public class Assignment extends BaseModel {
 	
 	private String genderPerference;
 	
+	private String subjectAndLevel;
 	
+	private String region;
+	
+	private int status;
+	
+	private long tutorId;
 	
 	public long getId() {
 		return id;
@@ -152,6 +158,38 @@ public class Assignment extends BaseModel {
 
 	public void setGenderPerference(String genderPerference) {
 		this.genderPerference = genderPerference;
+	}
+
+	public String getSubjectAndLevel() {
+		return subjectAndLevel;
+	}
+
+	public void setSubjectAndLevel(String subjectAndLevel) {
+		this.subjectAndLevel = subjectAndLevel;
+	}
+
+	public String getRegion() {
+		return region;
+	}
+
+	public void setRegion(String region) {
+		this.region = region;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	public long getTutorId() {
+		return tutorId;
+	}
+
+	public void setTutorId(long tutorId) {
+		this.tutorId = tutorId;
 	}
 	
 }

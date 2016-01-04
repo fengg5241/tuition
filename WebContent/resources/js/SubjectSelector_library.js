@@ -79,6 +79,7 @@
 									$selected_items = $selected_items.replace(/\[/g, " [");
 									//alert($selected_items);
 									$($selected_subjects).text($selected_items);
+									$("#requestSubjectLevelHiddenInput").val($selected_items);
 								},
 			
 		subject_checkbox_click: function($selected_subjects, $subject_div){

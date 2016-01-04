@@ -76,8 +76,16 @@ public class AssignmentManager extends BaseManager{
 			sql += ", gender_preference";
 			valSql += ",?";
 		}
-		sql += ")";
-		valSql += ")";
+		if (!"".equals(assignment.getSubjectAndLevel())) {
+			sql += ", level_subject";
+			valSql += ",?";
+		}
+		if (!"".equals(assignment.getRegion())) {
+			sql += ", requester_region";
+			valSql += ",?";
+		}
+		sql += ",createtime,updatetime)";
+		valSql += ",now(),now())";
 		
 		getJdbcTemplate().update(sql + valSql, new PreparedStatementSetter() {  
 	      @Override  
@@ -122,6 +130,12 @@ public class AssignmentManager extends BaseManager{
 				if (!"".equals(assignment.getGenderPerference())) {
 					pstmt.setString(++i, assignment.getGenderPerference());
 				}
+				if (!"".equals(assignment.getSubjectAndLevel())) {
+					pstmt.setString(++i, assignment.getSubjectAndLevel());
+				}
+				if (!"".equals(assignment.getRegion())) {
+					pstmt.setString(++i, assignment.getRegion());
+				}
 	      }}); 
 		
 		return assignment;
@@ -130,11 +144,12 @@ public class AssignmentManager extends BaseManager{
 
 	public List<Assignment> getAssignmentList(int pageNum, Model model) {
 		int totalCount = getJdbcTemplate().queryForInt("select count(1) from assignment where isdel = 0");
-		int pageCount = (totalCount-1) / 1 + 1; 
+		model.addAttribute("totalCount", totalCount);
+		int pageCount = (totalCount-1) / 10 + 1; 
 		model.addAttribute("pageCount", pageCount);
 		
-		int startIndex = 1 * (pageNum - 1);
-		String sql = "select * from assignment where isdel = 0 limit 1 offset " + startIndex;
+		int startIndex = 10 * (pageNum - 1);
+		String sql = "select * from assignment where isdel = 0 limit 10 offset " + startIndex;
 		List<Assignment> assignmentList = getJdbcTemplate()
 				.query(sql, rowMapper);
 		return assignmentList;
@@ -150,14 +165,14 @@ public class AssignmentManager extends BaseManager{
 		String EMPTY_DATA = "not indicated";
 		long id = rs.getLong(TableUtil.TABLE_PK);
 		long userId = rs.getLong("userid");
-		String requesterName = rs.getString("requester_name");
-		String contactNumber = rs.getString("contact_number");
-		String requesterEmail = rs.getString("requester_email");
-		String secondaryContactNumber = rs.getString("secondary_contact");
-		String requesterAddress = rs.getString("requester_address");
-		String postal = rs.getString("postal");
-		String lessonCountPerWeek = rs.getString("lesson_count_per_week");
-		String sessionLength = rs.getString("session_length");
+		String requesterName = handleEmptyString(rs.getString("requester_name"));
+		String contactNumber = handleEmptyString(rs.getString("contact_number"));
+		String requesterEmail = handleEmptyString(rs.getString("requester_email"));
+		String secondaryContactNumber = handleEmptyString(rs.getString("secondary_contact"));
+		String requesterAddress = handleEmptyString(rs.getString("requester_address"));
+		String postal = handleEmptyString(rs.getString("postal"));
+		String lessonCountPerWeek = handleEmptyString(rs.getString("lesson_count_per_week"));
+		String sessionLength = handleEmptyString(rs.getString("session_length"));
 		
 		String budget = rs.getString("budget");
 		if ("".equals(budget) || null == budget) {
@@ -165,11 +180,15 @@ public class AssignmentManager extends BaseManager{
 		}else {
 			budget = "SGD $" + budget + " per hour";
 		}
-		String otherRequests = rs.getString("other_requests");
-		String availableTimeslot = rs.getString("available_timeslot");
-		String startDate = rs.getString("start_date");
-		String genderPerference = rs.getString("gender_preference");
+		String otherRequests = handleEmptyString(rs.getString("other_requests"));
+		String availableTimeslot = handleEmptyString(rs.getString("available_timeslot"));
+		String startDate = handleEmptyString(rs.getString("start_date"));
+		String genderPerference = handleEmptyString(rs.getString("gender_preference"));
+		String subjectAndLevel = handleEmptyString(rs.getString("level_subject"));
+		String region = handleEmptyString(rs.getString("requester_region"));
 
+		int status = rs.getInt("status");
+		long tutorId =  rs.getLong("tutorid");
 		// map to the object
 		Assignment assignment = new Assignment();
 		assignment.setAvailableTimeslot(availableTimeslot);
@@ -187,6 +206,10 @@ public class AssignmentManager extends BaseManager{
 		assignment.setSessionLength(sessionLength);
 		assignment.setStartDate(startDate);
 		assignment.setUserId(userId);
+		assignment.setSubjectAndLevel(subjectAndLevel);
+		assignment.setRegion(region);
+		assignment.setStatus(status);
+		assignment.setTutorId(tutorId);
 		return assignment;
 	}
 	
@@ -194,6 +217,27 @@ public class AssignmentManager extends BaseManager{
 		public Assignment mapRow(ResultSet rs, int rowNum) throws SQLException {
 			return mapObject(rs);
 		}
+	}
+	
+	private String handleEmptyString(String str){
+		if (str == null || "".equals(str)) {
+			return "not indicated";
+		}else {
+			return str;
+		}
+	}
+
+
+	public void updateAssignment(long userId, long assignmentId, int status) {
+		String sql = "UPDATE assignment  SET  updatetime=now(), status=?, tutorid=? WHERE id = ?";
+		
+		getJdbcTemplate().update(sql, new PreparedStatementSetter() {  
+		      @Override  
+		      public void setValues(PreparedStatement pstmt) throws SQLException {  
+		          pstmt.setInt(1, status);  
+		          pstmt.setLong(2, userId);
+		          pstmt.setLong(3, assignmentId);
+			  }});
 	}
 
 }
