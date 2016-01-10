@@ -91,7 +91,7 @@ Simply indicate the regions
 on the <b>"Search Assignments"</b> button.
 	<br><br>If you are interested in an assignment, simply click on the <b>"Bid Assignment"</b> button. Assignments which you have bidded will appear in your tutor account page 
 	under the <b>"Assignments"</b> tab. Our coordinators will inform you if you have been selected.</div></fieldset>
-</div><div id="recent_assignments_count"><span id="recent_assignments_count_number"><c:out value="${totalCount}" /></span> assignments found. Please scroll down for results!</div><div class="assignment_fieldset"><form action="/recent_assignments" accept-charset="UTF-8" method="post" id="bidding-assignment-search-form">
+</div><div id="recent_assignments_count"><span id="recent_assignments_count_number"><c:out value="${totalCount}" /></span> assignments found. Please scroll down for results!</div><div class="assignment_fieldset"><form action="/tuition/recent_assignments" accept-charset="UTF-8" method="post" id="bidding-assignment-search-form">
 <div><div id="bidding_search_box"><fieldset><legend>Assignment Search</legend><div id="bidding_area_searchrow"><div id="area_label" class="searchfield_label">Select Region</div><div id="bidding_area_searchfield"><div class="form-checkboxes"><div class="form-item">
  <label class="option"><input name="Area[East]" id="edit-Area-East" value="East" class="form-checkbox" type="checkbox"> East</label>
 </div>
@@ -149,10 +149,10 @@ on the <b>"Search Assignments"</b> button.
 
 </div></form>
 </div><div class="pager">
-<c:url var="firstUrl" value="/recent_assignments/1" />
-<c:url var="lastUrl" value="/recent_assignments/${pageCount}" />
-<c:url var="prevUrl" value="/recent_assignments/${currentPage - 1}" />
-<c:url var="nextUrl" value="/recent_assignments/${currentPage + 1}" />
+<c:url var="firstUrl" value="/recent_assignments/1${searchCondition}" />
+<c:url var="lastUrl" value="/recent_assignments/${pageCount}${searchCondition}" />
+<c:url var="prevUrl" value="/recent_assignments/${currentPage - 1}${searchCondition}" />
+<c:url var="nextUrl" value="/recent_assignments/${currentPage + 1}${searchCondition}" />
 
 <c:choose>
     <c:when test="${currentPage != 1}">
@@ -162,7 +162,7 @@ on the <b>"Search Assignments"</b> button.
 </c:choose>
 <span class="pager-list">
 <c:forEach var="i" begin="${beginIndex}" end="${endIndex}">
-    <c:url var="pageUrl" value="/recent_assignments/${i}" />
+    <c:url var="pageUrl" value="/recent_assignments/${i}${searchCondition}" />
     <c:choose>
         <c:when test="${i == currentPage}">
        		<strong class="pager-current"><c:out value="${i}" /></strong>
@@ -215,7 +215,7 @@ on the <b>"Search Assignments"</b> button.
 </c:choose>
 <span class="pager-list">
 <c:forEach var="i" begin="${beginIndex}" end="${endIndex}">
-    <c:url var="pageUrl" value="/recent_assignments/${i}" />
+    <c:url var="pageUrl" value="/recent_assignments/${i}${searchCondition}" />
     <c:choose>
         <c:when test="${i == currentPage}">
        		<strong class="pager-current"><c:out value="${i}" /></strong>

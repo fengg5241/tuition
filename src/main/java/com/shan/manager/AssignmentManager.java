@@ -142,14 +142,50 @@ public class AssignmentManager extends BaseManager{
     }
 	
 
-	public List<Assignment> getAssignmentList(int pageNum, Model model) {
-		int totalCount = getJdbcTemplate().queryForInt("select count(1) from assignment where isdel = 0");
+	public List<Assignment> getAssignmentList(int pageNum, Model model, long userId, String regionCondition, String levelCondition) {
+		String queryCondition = " where isdel = 0 and  (status = 0 or ( status = 1 and tutorid = " + userId +"))  ";
+		
+		if (!"".equals(regionCondition) && regionCondition != null ) {
+			String[] regionArray = regionCondition.split(",");
+			for (int i = 0; i < regionArray.length; i++) {
+				String region = regionArray[i];
+				if (i == 0) {
+					queryCondition += " and (requester_region like '%" + region + "%' ";
+				}else {
+					queryCondition += " or requester_region like '%" + region + "%' ";
+				}
+			}
+			
+			if (regionArray.length > 0) {
+				queryCondition += ") ";
+			}
+		}
+		
+		if (!"".equals(levelCondition) && levelCondition != null ) {
+			String[] levelArray = levelCondition.split(",");
+			for (int i = 0; i < levelArray.length; i++) {
+				String level = levelArray[i];
+				if (i == 0) {
+					queryCondition += " and (level_subject like '%" + level + "%' ";
+				}else {
+					queryCondition += " or level_subject like '%" + level + "%' ";
+				}
+			}
+			
+			if (levelArray.length > 0) {
+				queryCondition += ") ";
+			}
+		}
+		
+		int countPerPage = 1;
+		
+		int totalCount = getJdbcTemplate().queryForInt("select count(1) from assignment" + queryCondition);
 		model.addAttribute("totalCount", totalCount);
-		int pageCount = (totalCount-1) / 10 + 1; 
+		int pageCount = (totalCount-1) / countPerPage + 1; 
 		model.addAttribute("pageCount", pageCount);
 		
-		int startIndex = 10 * (pageNum - 1);
-		String sql = "select * from assignment where isdel = 0 limit 10 offset " + startIndex;
+		int startIndex = countPerPage * (pageNum - 1);
+		String sql = "select * from assignment " + queryCondition + " limit " + countPerPage+" offset " + startIndex;
 		List<Assignment> assignmentList = getJdbcTemplate()
 				.query(sql, rowMapper);
 		return assignmentList;
