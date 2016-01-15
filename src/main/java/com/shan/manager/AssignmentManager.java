@@ -143,7 +143,7 @@ public class AssignmentManager extends BaseManager{
 	
 
 	public List<Assignment> getAssignmentList(int pageNum, Model model, long userId, String regionCondition, String levelCondition) {
-		String queryCondition = " where isdel = 0 and  (status = 0 or ( status = 1 and tutorid = " + userId +"))  ";
+		String queryCondition = " where isdel = 0  ";
 		
 		if (!"".equals(regionCondition) && regionCondition != null ) {
 			String[] regionArray = regionCondition.split(",");
@@ -179,13 +179,14 @@ public class AssignmentManager extends BaseManager{
 		
 		int countPerPage = 1;
 		
-		int totalCount = getJdbcTemplate().queryForInt("select count(1) from assignment" + queryCondition);
+		int totalCount = getJdbcTemplate().queryForInt("select count(1) from assignment a left join tutor_assignment ta on ta.assignmentid = a.id and ta.tutorid = " + userId + queryCondition);
 		model.addAttribute("totalCount", totalCount);
 		int pageCount = (totalCount-1) / countPerPage + 1; 
 		model.addAttribute("pageCount", pageCount);
 		
 		int startIndex = countPerPage * (pageNum - 1);
-		String sql = "select * from assignment " + queryCondition + " limit " + countPerPage+" offset " + startIndex;
+		String sql = "select * from assignment a left join tutor_assignment ta on ta.assignmentid = a.id and ta.tutorid = " + userId + 
+				queryCondition + " order by a.id desc limit " + countPerPage+" offset " + startIndex ;
 		List<Assignment> assignmentList = getJdbcTemplate()
 				.query(sql, rowMapper);
 		return assignmentList;
@@ -274,6 +275,20 @@ public class AssignmentManager extends BaseManager{
 		          pstmt.setLong(2, userId);
 		          pstmt.setLong(3, assignmentId);
 			  }});
+	}
+
+
+	public void bidAssignment(long tutorId, long assignmentId, int status) {
+		String sql = "INSERT INTO tutor_assignment(tutorid, assignmentid, status,createtime,updatetime)VALUES (?, ?, ?,now(),now());";
+		
+		getJdbcTemplate().update(sql, new PreparedStatementSetter() {  
+		      @Override  
+		      public void setValues(PreparedStatement pstmt) throws SQLException {  
+		          pstmt.setLong(1, tutorId);  
+		          pstmt.setLong(2, assignmentId);
+		          pstmt.setInt(3, status);
+			  }});
+		
 	}
 
 }

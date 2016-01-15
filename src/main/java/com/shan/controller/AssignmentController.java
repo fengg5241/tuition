@@ -166,7 +166,7 @@ public class AssignmentController {
 	public String goToAssignmentPage(@PathVariable("pageNum") int pageNum, Model model, HttpServletRequest request) {
 
 		long userId = -1;
-		if (request.getSession() != null) {
+		if (request.getSession() != null && request.getSession().getAttribute("userId") != null) {
 			userId = (long) request.getSession().getAttribute("userId");
 		}
 
@@ -205,8 +205,8 @@ public class AssignmentController {
 	public String bidAssignment(@PathVariable("assignmentId") long assignmentId, Model model,
 			HttpServletRequest request) {
 
-		long userId = (Long) (request.getSession().getAttribute("userId"));
-		assignmentManager.updateAssignment(userId, assignmentId, 1);
+		long tutorId = (Long) (request.getSession().getAttribute("userId"));
+		assignmentManager.bidAssignment(tutorId, assignmentId, 1);
 
 		return "success";
 	}
